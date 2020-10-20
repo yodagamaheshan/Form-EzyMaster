@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */; };
+		FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */; };
+		FBDBFE1F253EB96A0051B0E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */; };
+		FBDBFE22253EB96A0051B0E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDBFE21253EB96A0051B0E0 /* Preview Assets.xcassets */; };
+		FBDBFE2D253EB96B0051B0E0 /* StackOverFlow_AnswerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE2C253EB96B0051B0E0 /* StackOverFlow_AnswerTests.swift */; };
+		FBDBFE38253EB96B0051B0E0 /* StackOverFlow_AnswerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE37253EB96B0051B0E0 /* StackOverFlow_AnswerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBDBFE29253EB96B0051B0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBDBFE0F253EB96A0051B0E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBDBFE16253EB96A0051B0E0;
+			remoteInfo = "StackOverFlow-Answer";
+		};
+		FBDBFE34253EB96B0051B0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBDBFE0F253EB96A0051B0E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBDBFE16253EB96A0051B0E0;
+			remoteInfo = "StackOverFlow-Answer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBDBFE17253EB96A0051B0E0 /* StackOverFlow-Answer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StackOverFlow-Answer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlow_AnswerApp.swift; sourceTree = "<group>"; };
+		FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBDBFE21253EB96A0051B0E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBDBFE23253EB96A0051B0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDBFE28253EB96B0051B0E0 /* StackOverFlow-AnswerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StackOverFlow-AnswerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDBFE2C253EB96B0051B0E0 /* StackOverFlow_AnswerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlow_AnswerTests.swift; sourceTree = "<group>"; };
+		FBDBFE2E253EB96B0051B0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDBFE33253EB96B0051B0E0 /* StackOverFlow-AnswerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StackOverFlow-AnswerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDBFE37253EB96B0051B0E0 /* StackOverFlow_AnswerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlow_AnswerUITests.swift; sourceTree = "<group>"; };
+		FBDBFE39253EB96B0051B0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBDBFE14253EB96A0051B0E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDBFE25253EB96A0051B0E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDBFE30253EB96B0051B0E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBDBFE0E253EB96A0051B0E0 = {
+			isa = PBXGroup;
+			children = (
+				FBDBFE19253EB96A0051B0E0 /* StackOverFlow-Answer */,
+				FBDBFE2B253EB96B0051B0E0 /* StackOverFlow-AnswerTests */,
+				FBDBFE36253EB96B0051B0E0 /* StackOverFlow-AnswerUITests */,
+				FBDBFE18253EB96A0051B0E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBDBFE18253EB96A0051B0E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBDBFE17253EB96A0051B0E0 /* StackOverFlow-Answer.app */,
+				FBDBFE28253EB96B0051B0E0 /* StackOverFlow-AnswerTests.xctest */,
+				FBDBFE33253EB96B0051B0E0 /* StackOverFlow-AnswerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBDBFE19253EB96A0051B0E0 /* StackOverFlow-Answer */ = {
+			isa = PBXGroup;
+			children = (
+				FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */,
+				FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */,
+				FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */,
+				FBDBFE23253EB96A0051B0E0 /* Info.plist */,
+				FBDBFE20253EB96A0051B0E0 /* Preview Content */,
+			);
+			path = "StackOverFlow-Answer";
+			sourceTree = "<group>";
+		};
+		FBDBFE20253EB96A0051B0E0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBDBFE21253EB96A0051B0E0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBDBFE2B253EB96B0051B0E0 /* StackOverFlow-AnswerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBDBFE2C253EB96B0051B0E0 /* StackOverFlow_AnswerTests.swift */,
+				FBDBFE2E253EB96B0051B0E0 /* Info.plist */,
+			);
+			path = "StackOverFlow-AnswerTests";
+			sourceTree = "<group>";
+		};
+		FBDBFE36253EB96B0051B0E0 /* StackOverFlow-AnswerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBDBFE37253EB96B0051B0E0 /* StackOverFlow_AnswerUITests.swift */,
+				FBDBFE39253EB96B0051B0E0 /* Info.plist */,
+			);
+			path = "StackOverFlow-AnswerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBDBFE16253EB96A0051B0E0 /* StackOverFlow-Answer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDBFE3C253EB96B0051B0E0 /* Build configuration list for PBXNativeTarget "StackOverFlow-Answer" */;
+			buildPhases = (
+				FBDBFE13253EB96A0051B0E0 /* Sources */,
+				FBDBFE14253EB96A0051B0E0 /* Frameworks */,
+				FBDBFE15253EB96A0051B0E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StackOverFlow-Answer";
+			productName = "StackOverFlow-Answer";
+			productReference = FBDBFE17253EB96A0051B0E0 /* StackOverFlow-Answer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBDBFE27253EB96A0051B0E0 /* StackOverFlow-AnswerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDBFE3F253EB96B0051B0E0 /* Build configuration list for PBXNativeTarget "StackOverFlow-AnswerTests" */;
+			buildPhases = (
+				FBDBFE24253EB96A0051B0E0 /* Sources */,
+				FBDBFE25253EB96A0051B0E0 /* Frameworks */,
+				FBDBFE26253EB96A0051B0E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBDBFE2A253EB96B0051B0E0 /* PBXTargetDependency */,
+			);
+			name = "StackOverFlow-AnswerTests";
+			productName = "StackOverFlow-AnswerTests";
+			productReference = FBDBFE28253EB96B0051B0E0 /* StackOverFlow-AnswerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBDBFE32253EB96B0051B0E0 /* StackOverFlow-AnswerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDBFE42253EB96B0051B0E0 /* Build configuration list for PBXNativeTarget "StackOverFlow-AnswerUITests" */;
+			buildPhases = (
+				FBDBFE2F253EB96B0051B0E0 /* Sources */,
+				FBDBFE30253EB96B0051B0E0 /* Frameworks */,
+				FBDBFE31253EB96B0051B0E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBDBFE35253EB96B0051B0E0 /* PBXTargetDependency */,
+			);
+			name = "StackOverFlow-AnswerUITests";
+			productName = "StackOverFlow-AnswerUITests";
+			productReference = FBDBFE33253EB96B0051B0E0 /* StackOverFlow-AnswerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBDBFE0F253EB96A0051B0E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					FBDBFE16253EB96A0051B0E0 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					FBDBFE27253EB96A0051B0E0 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = FBDBFE16253EB96A0051B0E0;
+					};
+					FBDBFE32253EB96B0051B0E0 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = FBDBFE16253EB96A0051B0E0;
+					};
+				};
+			};
+			buildConfigurationList = FBDBFE12253EB96A0051B0E0 /* Build configuration list for PBXProject "StackOverFlow-Answer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBDBFE0E253EB96A0051B0E0;
+			productRefGroup = FBDBFE18253EB96A0051B0E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBDBFE16253EB96A0051B0E0 /* StackOverFlow-Answer */,
+				FBDBFE27253EB96A0051B0E0 /* StackOverFlow-AnswerTests */,
+				FBDBFE32253EB96B0051B0E0 /* StackOverFlow-AnswerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBDBFE15253EB96A0051B0E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDBFE22253EB96A0051B0E0 /* Preview Assets.xcassets in Resources */,
+				FBDBFE1F253EB96A0051B0E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDBFE26253EB96A0051B0E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDBFE31253EB96B0051B0E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBDBFE13253EB96A0051B0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */,
+				FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDBFE24253EB96A0051B0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDBFE2D253EB96B0051B0E0 /* StackOverFlow_AnswerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDBFE2F253EB96B0051B0E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDBFE38253EB96B0051B0E0 /* StackOverFlow_AnswerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBDBFE2A253EB96B0051B0E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBDBFE16253EB96A0051B0E0 /* StackOverFlow-Answer */;
+			targetProxy = FBDBFE29253EB96B0051B0E0 /* PBXContainerItemProxy */;
+		};
+		FBDBFE35253EB96B0051B0E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBDBFE16253EB96A0051B0E0 /* StackOverFlow-Answer */;
+			targetProxy = FBDBFE34253EB96B0051B0E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBDBFE3A253EB96B0051B0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBDBFE3B253EB96B0051B0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBDBFE3D253EB96B0051B0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StackOverFlow-Answer/Preview Content\"";
+				DEVELOPMENT_TEAM = Q5KJ24W38Y;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "StackOverFlow-Answer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HeshCompany.StackOverFlow-Answer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBDBFE3E253EB96B0051B0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StackOverFlow-Answer/Preview Content\"";
+				DEVELOPMENT_TEAM = Q5KJ24W38Y;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "StackOverFlow-Answer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HeshCompany.StackOverFlow-Answer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FBDBFE40253EB96B0051B0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q5KJ24W38Y;
+				INFOPLIST_FILE = "StackOverFlow-AnswerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HeshCompany.StackOverFlow-AnswerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverFlow-Answer.app/StackOverFlow-Answer";
+			};
+			name = Debug;
+		};
+		FBDBFE41253EB96B0051B0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q5KJ24W38Y;
+				INFOPLIST_FILE = "StackOverFlow-AnswerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HeshCompany.StackOverFlow-AnswerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverFlow-Answer.app/StackOverFlow-Answer";
+			};
+			name = Release;
+		};
+		FBDBFE43253EB96B0051B0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q5KJ24W38Y;
+				INFOPLIST_FILE = "StackOverFlow-AnswerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HeshCompany.StackOverFlow-AnswerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "StackOverFlow-Answer";
+			};
+			name = Debug;
+		};
+		FBDBFE44253EB96B0051B0E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q5KJ24W38Y;
+				INFOPLIST_FILE = "StackOverFlow-AnswerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "HeshCompany.StackOverFlow-AnswerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "StackOverFlow-Answer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBDBFE12253EB96A0051B0E0 /* Build configuration list for PBXProject "StackOverFlow-Answer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDBFE3A253EB96B0051B0E0 /* Debug */,
+				FBDBFE3B253EB96B0051B0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDBFE3C253EB96B0051B0E0 /* Build configuration list for PBXNativeTarget "StackOverFlow-Answer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDBFE3D253EB96B0051B0E0 /* Debug */,
+				FBDBFE3E253EB96B0051B0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDBFE3F253EB96B0051B0E0 /* Build configuration list for PBXNativeTarget "StackOverFlow-AnswerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDBFE40253EB96B0051B0E0 /* Debug */,
+				FBDBFE41253EB96B0051B0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDBFE42253EB96B0051B0E0 /* Build configuration list for PBXNativeTarget "StackOverFlow-AnswerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDBFE43253EB96B0051B0E0 /* Debug */,
+				FBDBFE44253EB96B0051B0E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBDBFE0F253EB96A0051B0E0 /* Project object */;
+}
