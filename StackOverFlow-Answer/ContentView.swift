@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject private var viewModel = InstructorCourseViewModel()
+    @State private var isSelected = false
+    
     var body: some View {
         
         ScrollView {
+            ToggleButton(isSelected: $isSelected, title: "Per week")
             EzyMasterAppButton(action: viewModel.submit, title: "Submit")
         }
         .background(Color.pink.opacity(0.2))
-            
+        
         
     }
 }

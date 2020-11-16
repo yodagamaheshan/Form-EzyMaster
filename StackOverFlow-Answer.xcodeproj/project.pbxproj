@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FB7DC1282562864900962A54 /* InstructorCourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */; };
 		FB7DC12D256288E900962A54 /* EzyMasterAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */; };
+		FB7DC13225628C9200962A54 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC13125628C9200962A54 /* ToggleButton.swift */; };
 		FB9C4C7F2541169400CAC446 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = FB9C4C7E2541169400CAC446 /* MyLibrary */; };
 		FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */; };
 		FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructorCourseViewModel.swift; sourceTree = "<group>"; };
 		FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzyMasterAppButton.swift; sourceTree = "<group>"; };
+		FB7DC13125628C9200962A54 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		FB9C4C792541166B00CAC446 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLibrary; path = ../../HeshSwiftPackages/MyLibrary; sourceTree = "<group>"; };
 		FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivenSwiftUIView.swift; sourceTree = "<group>"; };
 		FBDBFE17253EB96A0051B0E0 /* StackOverFlow-Answer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StackOverFlow-Answer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 			children = (
 				FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */,
 				FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */,
+				FB7DC13125628C9200962A54 /* ToggleButton.swift */,
 				FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */,
 				FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */,
 				FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */,
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB7DC12D256288E900962A54 /* EzyMasterAppButton.swift in Sources */,
+				FB7DC13225628C9200962A54 /* ToggleButton.swift in Sources */,
 				FB7DC1282562864900962A54 /* InstructorCourseViewModel.swift in Sources */,
 				FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */,
 				FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */,
