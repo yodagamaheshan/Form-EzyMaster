@@ -11,7 +11,7 @@ import SwiftUI
 struct StackOverFlow_AnswerApp: App {
     var body: some Scene {
         WindowGroup {
-            GradientExperiment()
+            ContentView()
         }
     }
 }

@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB7DC1282562864900962A54 /* InstructorCourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */; };
+		FB7DC12D256288E900962A54 /* EzyMasterAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */; };
+		FB9C4C7F2541169400CAC446 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = FB9C4C7E2541169400CAC446 /* MyLibrary */; };
+		FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */; };
 		FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */; };
 		FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */; };
 		FBDBFE1F253EB96A0051B0E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */; };
@@ -33,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructorCourseViewModel.swift; sourceTree = "<group>"; };
+		FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzyMasterAppButton.swift; sourceTree = "<group>"; };
+		FB9C4C792541166B00CAC446 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLibrary; path = ../../HeshSwiftPackages/MyLibrary; sourceTree = "<group>"; };
+		FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivenSwiftUIView.swift; sourceTree = "<group>"; };
 		FBDBFE17253EB96A0051B0E0 /* StackOverFlow-Answer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StackOverFlow-Answer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlow_AnswerApp.swift; sourceTree = "<group>"; };
 		FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9C4C7F2541169400CAC446 /* MyLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +81,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB9C4C7D2541169400CAC446 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FBDBFE0E253EB96A0051B0E0 = {
 			isa = PBXGroup;
 			children = (
+				FB9C4C792541166B00CAC446 /* MyLibrary */,
 				FBDBFE19253EB96A0051B0E0 /* StackOverFlow-Answer */,
 				FBDBFE2B253EB96B0051B0E0 /* StackOverFlow-AnswerTests */,
 				FBDBFE36253EB96B0051B0E0 /* StackOverFlow-AnswerUITests */,
 				FBDBFE18253EB96A0051B0E0 /* Products */,
+				FB9C4C7D2541169400CAC446 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +115,9 @@
 			children = (
 				FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */,
 				FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */,
+				FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */,
+				FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */,
+				FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */,
 				FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */,
 				FBDBFE23253EB96A0051B0E0 /* Info.plist */,
 				FBDBFE20253EB96A0051B0E0 /* Preview Content */,
@@ -146,6 +167,9 @@
 			dependencies = (
 			);
 			name = "StackOverFlow-Answer";
+			packageProductDependencies = (
+				FB9C4C7E2541169400CAC446 /* MyLibrary */,
+			);
 			productName = "StackOverFlow-Answer";
 			productReference = FBDBFE17253EB96A0051B0E0 /* StackOverFlow-Answer.app */;
 			productType = "com.apple.product-type.application";
@@ -259,6 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7DC12D256288E900962A54 /* EzyMasterAppButton.swift in Sources */,
+				FB7DC1282562864900962A54 /* InstructorCourseViewModel.swift in Sources */,
+				FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */,
 				FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */,
 				FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */,
 			);
@@ -580,6 +607,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB9C4C7E2541169400CAC446 /* MyLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FBDBFE0F253EB96A0051B0E0 /* Project object */;
 }
