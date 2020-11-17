@@ -16,6 +16,9 @@
 		FBC8481B25635E8D00202D6E /* SelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8481A25635E8D00202D6E /* SelectionButton.swift */; };
 		FBC8482325635EE800202D6E /* DoubleToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8482225635EE800202D6E /* DoubleToggleButton.swift */; };
 		FBC8482825635F2300202D6E /* DoubleToggleButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8482725635F2300202D6E /* DoubleToggleButtonViewModel.swift */; };
+		FBC8483225637E1F00202D6E /* InputViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8483125637E1F00202D6E /* InputViewBackground.swift */; };
+		FBC8483A25637E4600202D6E /* KeyInputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8483925637E4600202D6E /* KeyInputTextField.swift */; };
+		FBC8483F2563820600202D6E /* SectionBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8483E2563820600202D6E /* SectionBackground.swift */; };
 		FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */; };
 		FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */; };
 		FBDBFE1F253EB96A0051B0E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */; };
@@ -51,6 +54,9 @@
 		FBC8481A25635E8D00202D6E /* SelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionButton.swift; sourceTree = "<group>"; };
 		FBC8482225635EE800202D6E /* DoubleToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleToggleButton.swift; sourceTree = "<group>"; };
 		FBC8482725635F2300202D6E /* DoubleToggleButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleToggleButtonViewModel.swift; sourceTree = "<group>"; };
+		FBC8483125637E1F00202D6E /* InputViewBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewBackground.swift; sourceTree = "<group>"; };
+		FBC8483925637E4600202D6E /* KeyInputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyInputTextField.swift; sourceTree = "<group>"; };
+		FBC8483E2563820600202D6E /* SectionBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBackground.swift; sourceTree = "<group>"; };
 		FBDBFE17253EB96A0051B0E0 /* StackOverFlow-Answer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StackOverFlow-Answer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlow_AnswerApp.swift; sourceTree = "<group>"; };
 		FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +114,16 @@
 			path = DoubleToggleButton;
 			sourceTree = "<group>";
 		};
+		FBC8483025637E0B00202D6E /* InputViews */ = {
+			isa = PBXGroup;
+			children = (
+				FBC8483125637E1F00202D6E /* InputViewBackground.swift */,
+				FBC8483925637E4600202D6E /* KeyInputTextField.swift */,
+				FBC8483E2563820600202D6E /* SectionBackground.swift */,
+			);
+			path = InputViews;
+			sourceTree = "<group>";
+		};
 		FBDBFE0E253EB96A0051B0E0 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +149,7 @@
 		FBDBFE19253EB96A0051B0E0 /* StackOverFlow-Answer */ = {
 			isa = PBXGroup;
 			children = (
+				FBC8483025637E0B00202D6E /* InputViews */,
 				FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */,
 				FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */,
 				FBC8481925635E7100202D6E /* DoubleToggleButton */,
@@ -314,6 +331,9 @@
 				FBC8482825635F2300202D6E /* DoubleToggleButtonViewModel.swift in Sources */,
 				FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */,
 				FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */,
+				FBC8483F2563820600202D6E /* SectionBackground.swift in Sources */,
+				FBC8483A25637E4600202D6E /* KeyInputTextField.swift in Sources */,
+				FBC8483225637E1F00202D6E /* InputViewBackground.swift in Sources */,
 				FBC8482325635EE800202D6E /* DoubleToggleButton.swift in Sources */,
 				FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */,
 			);
