@@ -11,6 +11,7 @@
 		FB7DC12D256288E900962A54 /* EzyMasterAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */; };
 		FB7DC13225628C9200962A54 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC13125628C9200962A54 /* CheckButton.swift */; };
 		FB9C4C7F2541169400CAC446 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = FB9C4C7E2541169400CAC446 /* MyLibrary */; };
+		FBAF43EB2563D6CD00D42C99 /* EzyMasterFormSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF43EA2563D6CD00D42C99 /* EzyMasterFormSectionView.swift */; };
 		FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */; };
 		FBC8481225635DCF00202D6E /* ToggleButtonLabl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8481125635DCF00202D6E /* ToggleButtonLabl.swift */; };
 		FBC8481B25635E8D00202D6E /* SelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8481A25635E8D00202D6E /* SelectionButton.swift */; };
@@ -53,6 +54,7 @@
 		FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzyMasterAppButton.swift; sourceTree = "<group>"; };
 		FB7DC13125628C9200962A54 /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
 		FB9C4C792541166B00CAC446 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLibrary; path = ../../HeshSwiftPackages/MyLibrary; sourceTree = "<group>"; };
+		FBAF43EA2563D6CD00D42C99 /* EzyMasterFormSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzyMasterFormSectionView.swift; sourceTree = "<group>"; };
 		FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivenSwiftUIView.swift; sourceTree = "<group>"; };
 		FBC8481125635DCF00202D6E /* ToggleButtonLabl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButtonLabl.swift; sourceTree = "<group>"; };
 		FBC8481A25635E8D00202D6E /* SelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionButton.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				FBDBFE23253EB96A0051B0E0 /* Info.plist */,
 				FBDBFE20253EB96A0051B0E0 /* Preview Content */,
 				FBC84843256388B600202D6E /* UIConstants.swift */,
+				FBAF43EA2563D6CD00D42C99 /* EzyMasterFormSectionView.swift */,
 			);
 			path = "StackOverFlow-Answer";
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				FBC84844256388B600202D6E /* UIConstants.swift in Sources */,
 				FB7DC13225628C9200962A54 /* CheckButton.swift in Sources */,
 				FB7DC1282562864900962A54 /* InstructorCourseViewModel.swift in Sources */,
+				FBAF43EB2563D6CD00D42C99 /* EzyMasterFormSectionView.swift in Sources */,
 				FBC8482825635F2300202D6E /* DoubleToggleButtonViewModel.swift in Sources */,
 				FBC848612563AB4500202D6E /* DateInputView.swift in Sources */,
 				FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */,
