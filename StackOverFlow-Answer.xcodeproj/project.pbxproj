@@ -116,6 +116,7 @@
 				FBC8481A25635E8D00202D6E /* SelectionButton.swift */,
 				FBC8482225635EE800202D6E /* DoubleToggleButton.swift */,
 				FBC8482725635F2300202D6E /* DoubleToggleButtonViewModel.swift */,
+				FBC8481125635DCF00202D6E /* ToggleButtonLabl.swift */,
 			);
 			path = DoubleToggleButton;
 			sourceTree = "<group>";
@@ -126,18 +127,18 @@
 				FBC8483125637E1F00202D6E /* InputViewBackground.swift */,
 				FBC8483925637E4600202D6E /* KeyInputTextField.swift */,
 				FBC8483E2563820600202D6E /* SectionBackground.swift */,
-				FBC848582563A2C900202D6E /* RoundedUnputView */,
+				FBC848582563A2C900202D6E /* PopUpInputView */,
 			);
 			path = InputViews;
 			sourceTree = "<group>";
 		};
-		FBC848582563A2C900202D6E /* RoundedUnputView */ = {
+		FBC848582563A2C900202D6E /* PopUpInputView */ = {
 			isa = PBXGroup;
 			children = (
 				FBC8484825638B6D00202D6E /* PopupInputView.swift */,
 				FBC8485025639BF100202D6E /* RoundBackgroundImage.swift */,
 			);
-			path = RoundedUnputView;
+			path = PopUpInputView;
 			sourceTree = "<group>";
 		};
 		FBDBFE0E253EB96A0051B0E0 = {
@@ -169,7 +170,6 @@
 				FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */,
 				FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */,
 				FBC8481925635E7100202D6E /* DoubleToggleButton */,
-				FBC8481125635DCF00202D6E /* ToggleButtonLabl.swift */,
 				FB7DC13125628C9200962A54 /* CheckButton.swift */,
 				FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */,
 				FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */,
