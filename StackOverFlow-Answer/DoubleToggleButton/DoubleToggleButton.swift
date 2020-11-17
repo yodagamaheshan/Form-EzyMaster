@@ -15,23 +15,33 @@ struct DoubleToggleButton: View {
     @ObservedObject private var viewModel: DoubleToggleButtonViewModel
     
     var body: some View {
-        HStack {
-            SelectionButton(isSelected: $viewModel.LHSInsideSelection, title: viewModel.LHSTitle)
-            SelectionButton(isSelected: $viewModel.LHSRnsideSelection, title: viewModel.RHSTitle)
-        }
-        .onAppear(perform: {
-            if  viewModel.LHSSelection == viewModel.RHSSelection {
-                viewModel.makeOnlyLHSSelected()
+        VStack {
+            getNameView()
+            HStack {
+                SelectionButton(isSelected: $viewModel.LHSInsideSelection, title: viewModel.LHSTitle)
+                SelectionButton(isSelected: $viewModel.LHSRnsideSelection, title: viewModel.RHSTitle)
             }
+            .onAppear(perform: {
+                if  viewModel.LHSSelection == viewModel.RHSSelection {
+                    viewModel.makeOnlyLHSSelected()
+                }
         })
+        }
     }
     
     //MARK: constant and methods
-    
+    fileprivate func getNameView() -> HStack<TupleView<(Text, Spacer)>> {
+        return HStack {
+            Text(viewModel.name)
+                .foregroundColor(.gray)
+                .bold()
+            Spacer()
+        }
+    }
 }
 
 struct DoubleToggleButton_Previews: PreviewProvider {
     static var previews: some View {
-        DoubleToggleButton(titles: .init(LHSTitle: "Title one", RHSTitle: "Title two"), LHSSelection: .constant(true), RHSSelection: .constant(false))
+        DoubleToggleButton(titles: .init(name: "Name", LHSTitle: "Title one", RHSTitle: "Title two"), LHSSelection: .constant(true), RHSSelection: .constant(false))
     }
 }

@@ -18,18 +18,23 @@ class DoubleToggleButtonViewModel: ObservableObject {
     }
     
     struct Titles {
+        let name: String
         let LHSTitle: String
         let RHSTitle: String
     }
     
     private var titles: Titles
     
+    var name: String {
+        titles.name
+    }
     var LHSTitle: String {
         titles.LHSTitle
     }
     var RHSTitle: String {
         titles.RHSTitle
     }
+    
     
     //output
     @Binding var LHSSelection: Bool

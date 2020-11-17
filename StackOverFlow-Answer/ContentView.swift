@@ -18,7 +18,7 @@ struct ContentView: View {
     @State private var courseDescription = ""
     @State private var courseLongDescription = "courseLongDescription"
     
-    var titlesOfDoubleToggleButton = DoubleToggleButtonViewModel.Titles(LHSTitle: "LHS title", RHSTitle: "RHS title")
+    var titlesOfDoubleToggleButton = DoubleToggleButtonViewModel.Titles(name: "Name", LHSTitle: "LHS title", RHSTitle: "RHS title")
     
     var body: some View {
         
