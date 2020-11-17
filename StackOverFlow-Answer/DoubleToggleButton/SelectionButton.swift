@@ -1,29 +1,28 @@
 //
-//  ToggleButton.swift
+//  SelectionButton.swift
 //  StackOverFlow-Answer
 //
-//  Created by Heshan Yodagama on 2020-11-16.
+//  Created by Heshan Yodagama on 2020-11-17.
 //
 
 import SwiftUI
 
-struct ToggleButton: View {
+struct SelectionButton: View {
     @Binding var isSelected: Bool
     
     let title: String
     
     var body: some View {
         Button(action: {
-            isSelected.toggle()
+            isSelected = true
         }, label: {
             ToggleButtonLabl(title: title, isSelected: isSelected)
         })
     }
 }
 
-
-struct ToggleButton_Previews: PreviewProvider {
+struct SelectionButton_Previews: PreviewProvider {
     static var previews: some View {
-        ToggleButton(isSelected: .constant(true), title: "Long title")
+        SelectionButton(isSelected: .constant(true), title: "Title")
     }
 }
