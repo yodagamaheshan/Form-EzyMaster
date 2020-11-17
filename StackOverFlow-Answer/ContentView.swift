@@ -16,6 +16,7 @@ struct ContentView: View {
     @State private var RHSSelection = false
     @State private var coursetitle = ""
     @State private var courseDescription = ""
+    @State private var courseLongDescription = "courseLongDescription"
     
     var titlesOfDoubleToggleButton = DoubleToggleButtonViewModel.Titles(LHSTitle: "LHS title", RHSTitle: "RHS title")
     
@@ -31,12 +32,13 @@ struct ContentView: View {
                     SectionBackground()
                     VStack {
                         PopupInputView(placeHolder: "Placeholder",value: "Value")
+
                         PopupInputView(placeHolder: "Placeholder",value: nil)
                     }
                     .padding()
                 }
                 .padding()
-                ToggleButton(isSelected: $isSelected, title: "Per week")
+                CheckButton(isSelected: $isSelected, title: "Per week")
                 EzyMasterAppButton(action: viewModel.submit, title: "Submit")
             }
             .animation(.spring())

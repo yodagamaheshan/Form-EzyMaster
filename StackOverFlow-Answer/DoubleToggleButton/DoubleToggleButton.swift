@@ -21,7 +21,7 @@ struct DoubleToggleButton: View {
         }
         .onAppear(perform: {
             if  viewModel.LHSSelection == viewModel.RHSSelection {
-                viewModel.makeOnlyRHSSelected()
+                viewModel.makeOnlyLHSSelected()
             }
         })
     }

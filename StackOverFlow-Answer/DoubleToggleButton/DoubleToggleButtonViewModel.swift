@@ -47,12 +47,12 @@ class DoubleToggleButtonViewModel: ObservableObject {
         }
     }
     
-    private func makeOnlyLHSSelected() {
+    func makeOnlyLHSSelected() {
         LHSSelection = true
         RHSSelection = false
     }
     
-    func makeOnlyRHSSelected() {
+    private func makeOnlyRHSSelected() {
         LHSSelection = false
         RHSSelection = true
     }

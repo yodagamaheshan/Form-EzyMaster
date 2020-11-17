@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FB7DC1282562864900962A54 /* InstructorCourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */; };
 		FB7DC12D256288E900962A54 /* EzyMasterAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */; };
-		FB7DC13225628C9200962A54 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC13125628C9200962A54 /* ToggleButton.swift */; };
+		FB7DC13225628C9200962A54 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC13125628C9200962A54 /* CheckButton.swift */; };
 		FB9C4C7F2541169400CAC446 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = FB9C4C7E2541169400CAC446 /* MyLibrary */; };
 		FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */; };
 		FBC8481225635DCF00202D6E /* ToggleButtonLabl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8481125635DCF00202D6E /* ToggleButtonLabl.swift */; };
@@ -21,6 +21,7 @@
 		FBC8483F2563820600202D6E /* SectionBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8483E2563820600202D6E /* SectionBackground.swift */; };
 		FBC84844256388B600202D6E /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC84843256388B600202D6E /* UIConstants.swift */; };
 		FBC8484925638B6D00202D6E /* PopupInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8484825638B6D00202D6E /* PopupInputView.swift */; };
+		FBC8485125639BF100202D6E /* RoundBackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8485025639BF100202D6E /* RoundBackgroundImage.swift */; };
 		FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */; };
 		FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */; };
 		FBDBFE1F253EB96A0051B0E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */; };
@@ -49,7 +50,7 @@
 /* Begin PBXFileReference section */
 		FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructorCourseViewModel.swift; sourceTree = "<group>"; };
 		FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzyMasterAppButton.swift; sourceTree = "<group>"; };
-		FB7DC13125628C9200962A54 /* ToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		FB7DC13125628C9200962A54 /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
 		FB9C4C792541166B00CAC446 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLibrary; path = ../../HeshSwiftPackages/MyLibrary; sourceTree = "<group>"; };
 		FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivenSwiftUIView.swift; sourceTree = "<group>"; };
 		FBC8481125635DCF00202D6E /* ToggleButtonLabl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButtonLabl.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		FBC8483E2563820600202D6E /* SectionBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBackground.swift; sourceTree = "<group>"; };
 		FBC84843256388B600202D6E /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		FBC8484825638B6D00202D6E /* PopupInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupInputView.swift; sourceTree = "<group>"; };
+		FBC8485025639BF100202D6E /* RoundBackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBackgroundImage.swift; sourceTree = "<group>"; };
 		FBDBFE17253EB96A0051B0E0 /* StackOverFlow-Answer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StackOverFlow-Answer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlow_AnswerApp.swift; sourceTree = "<group>"; };
 		FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				FBC8483925637E4600202D6E /* KeyInputTextField.swift */,
 				FBC8483E2563820600202D6E /* SectionBackground.swift */,
 				FBC8484825638B6D00202D6E /* PopupInputView.swift */,
+				FBC8485025639BF100202D6E /* RoundBackgroundImage.swift */,
 			);
 			path = InputViews;
 			sourceTree = "<group>";
@@ -159,7 +162,7 @@
 				FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */,
 				FBC8481925635E7100202D6E /* DoubleToggleButton */,
 				FBC8481125635DCF00202D6E /* ToggleButtonLabl.swift */,
-				FB7DC13125628C9200962A54 /* ToggleButton.swift */,
+				FB7DC13125628C9200962A54 /* CheckButton.swift */,
 				FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */,
 				FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */,
 				FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */,
@@ -329,11 +332,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC8485125639BF100202D6E /* RoundBackgroundImage.swift in Sources */,
 				FB7DC12D256288E900962A54 /* EzyMasterAppButton.swift in Sources */,
 				FBC8481225635DCF00202D6E /* ToggleButtonLabl.swift in Sources */,
 				FBC8481B25635E8D00202D6E /* SelectionButton.swift in Sources */,
 				FBC84844256388B600202D6E /* UIConstants.swift in Sources */,
-				FB7DC13225628C9200962A54 /* ToggleButton.swift in Sources */,
+				FB7DC13225628C9200962A54 /* CheckButton.swift in Sources */,
 				FB7DC1282562864900962A54 /* InstructorCourseViewModel.swift in Sources */,
 				FBC8482825635F2300202D6E /* DoubleToggleButtonViewModel.swift in Sources */,
 				FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */,

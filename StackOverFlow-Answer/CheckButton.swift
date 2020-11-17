@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ToggleButton: View {
+struct CheckButton: View {
     @Binding var isSelected: Bool
     
     let title: String
@@ -24,6 +24,6 @@ struct ToggleButton: View {
 
 struct ToggleButton_Previews: PreviewProvider {
     static var previews: some View {
-        ToggleButton(isSelected: .constant(true), title: "Long title")
+        CheckButton(isSelected: .constant(true), title: "Long title")
     }
 }
