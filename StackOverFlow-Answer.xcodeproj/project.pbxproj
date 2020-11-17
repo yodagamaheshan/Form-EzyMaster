@@ -127,7 +127,6 @@
 				FBC8483925637E4600202D6E /* KeyInputTextField.swift */,
 				FBC8483E2563820600202D6E /* SectionBackground.swift */,
 				FBC8484825638B6D00202D6E /* PopupInputView.swift */,
-				FBC8485025639BF100202D6E /* RoundBackgroundImage.swift */,
 			);
 			path = InputViews;
 			sourceTree = "<group>";
@@ -157,6 +156,7 @@
 		FBDBFE19253EB96A0051B0E0 /* StackOverFlow-Answer */ = {
 			isa = PBXGroup;
 			children = (
+				FBC8485025639BF100202D6E /* RoundBackgroundImage.swift */,
 				FBC8483025637E0B00202D6E /* InputViews */,
 				FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */,
 				FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */,

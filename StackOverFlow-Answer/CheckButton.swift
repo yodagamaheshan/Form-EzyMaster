@@ -16,7 +16,13 @@ struct CheckButton: View {
         Button(action: {
             isSelected.toggle()
         }, label: {
-            ToggleButtonLabl(title: title, isSelected: isSelected)
+            HStack {
+                Image(systemName: "checkmark.circle.fill")
+                    .foregroundColor(isSelected ? Color.blue:.gray)
+                Text(title)
+                    .foregroundColor(.gray)
+                Spacer()
+            }
         })
     }
 }
