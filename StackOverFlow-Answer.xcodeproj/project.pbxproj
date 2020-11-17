@@ -22,6 +22,7 @@
 		FBC84844256388B600202D6E /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC84843256388B600202D6E /* UIConstants.swift */; };
 		FBC8484925638B6D00202D6E /* PopupInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8484825638B6D00202D6E /* PopupInputView.swift */; };
 		FBC8485125639BF100202D6E /* RoundBackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8485025639BF100202D6E /* RoundBackgroundImage.swift */; };
+		FBC848612563AB4500202D6E /* DateInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC848602563AB4500202D6E /* DateInputView.swift */; };
 		FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */; };
 		FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */; };
 		FBDBFE1F253EB96A0051B0E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		FBC84843256388B600202D6E /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		FBC8484825638B6D00202D6E /* PopupInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupInputView.swift; sourceTree = "<group>"; };
 		FBC8485025639BF100202D6E /* RoundBackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundBackgroundImage.swift; sourceTree = "<group>"; };
+		FBC848602563AB4500202D6E /* DateInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputView.swift; sourceTree = "<group>"; };
 		FBDBFE17253EB96A0051B0E0 /* StackOverFlow-Answer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StackOverFlow-Answer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlow_AnswerApp.swift; sourceTree = "<group>"; };
 		FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		FBC8483025637E0B00202D6E /* InputViews */ = {
 			isa = PBXGroup;
 			children = (
+				FBC8485F2563AB2D00202D6E /* DateInputView */,
 				FBC8483125637E1F00202D6E /* InputViewBackground.swift */,
 				FBC8483925637E4600202D6E /* KeyInputTextField.swift */,
 				FBC8483E2563820600202D6E /* SectionBackground.swift */,
@@ -139,6 +142,14 @@
 				FBC8485025639BF100202D6E /* RoundBackgroundImage.swift */,
 			);
 			path = PopUpInputView;
+			sourceTree = "<group>";
+		};
+		FBC8485F2563AB2D00202D6E /* DateInputView */ = {
+			isa = PBXGroup;
+			children = (
+				FBC848602563AB4500202D6E /* DateInputView.swift */,
+			);
+			path = DateInputView;
 			sourceTree = "<group>";
 		};
 		FBDBFE0E253EB96A0051B0E0 = {
@@ -348,6 +359,7 @@
 				FB7DC13225628C9200962A54 /* CheckButton.swift in Sources */,
 				FB7DC1282562864900962A54 /* InstructorCourseViewModel.swift in Sources */,
 				FBC8482825635F2300202D6E /* DoubleToggleButtonViewModel.swift in Sources */,
+				FBC848612563AB4500202D6E /* DateInputView.swift in Sources */,
 				FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */,
 				FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */,
 				FBC8483F2563820600202D6E /* SectionBackground.swift in Sources */,
