@@ -23,22 +23,28 @@ struct ContentView: View {
     var body: some View {
         
         ScrollView {
-            VStack {
-                DoubleToggleButton(titles: titlesOfDoubleToggleButton, LHSSelection: $LHSSelecetion, RHSSelection: $RHSSelection)
-                if RHSSelection {
-                    getRHSView()
-                }
-                ZStack {
-                    SectionBackground()
-                    VStack {
-                        PopupInputView(placeHolder: "Placeholder",value: "Value")
-
-                        PopupInputView(placeHolder: "Placeholder",value: nil)
+            
+            EzyMasterFormSectionView(title: "Basic") {
+                VStack {
+                    DoubleToggleButton(titles: titlesOfDoubleToggleButton, LHSSelection: $LHSSelecetion, RHSSelection: $RHSSelection)
+                    if RHSSelection {
+                        getRHSView()
                     }
-                    .padding()
+                    ZStack {
+                        SectionBackground()
+                        VStack {
+                            PopupInputView(placeHolder: "Placeholder",value: "Value")
+
+                            PopupInputView(placeHolder: "Placeholder",value: nil)
+                        }
+                    }
+                    CheckButton(isSelected: $isSelected, title: "Per week")
                 }
-                .padding()
-                CheckButton(isSelected: $isSelected, title: "Per week")
+                .animation(.spring())
+            }
+            
+            VStack {
+                
                 EzyMasterAppButton(action: viewModel.submit, title: "Submit")
             }
             .animation(.spring())
