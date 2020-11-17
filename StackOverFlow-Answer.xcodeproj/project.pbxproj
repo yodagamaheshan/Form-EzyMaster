@@ -19,6 +19,8 @@
 		FBC8483225637E1F00202D6E /* InputViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8483125637E1F00202D6E /* InputViewBackground.swift */; };
 		FBC8483A25637E4600202D6E /* KeyInputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8483925637E4600202D6E /* KeyInputTextField.swift */; };
 		FBC8483F2563820600202D6E /* SectionBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8483E2563820600202D6E /* SectionBackground.swift */; };
+		FBC84844256388B600202D6E /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC84843256388B600202D6E /* UIConstants.swift */; };
+		FBC8484925638B6D00202D6E /* PopupInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8484825638B6D00202D6E /* PopupInputView.swift */; };
 		FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */; };
 		FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */; };
 		FBDBFE1F253EB96A0051B0E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */; };
@@ -57,6 +59,8 @@
 		FBC8483125637E1F00202D6E /* InputViewBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewBackground.swift; sourceTree = "<group>"; };
 		FBC8483925637E4600202D6E /* KeyInputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyInputTextField.swift; sourceTree = "<group>"; };
 		FBC8483E2563820600202D6E /* SectionBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBackground.swift; sourceTree = "<group>"; };
+		FBC84843256388B600202D6E /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		FBC8484825638B6D00202D6E /* PopupInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupInputView.swift; sourceTree = "<group>"; };
 		FBDBFE17253EB96A0051B0E0 /* StackOverFlow-Answer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StackOverFlow-Answer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlow_AnswerApp.swift; sourceTree = "<group>"; };
 		FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 				FBC8483125637E1F00202D6E /* InputViewBackground.swift */,
 				FBC8483925637E4600202D6E /* KeyInputTextField.swift */,
 				FBC8483E2563820600202D6E /* SectionBackground.swift */,
+				FBC8484825638B6D00202D6E /* PopupInputView.swift */,
 			);
 			path = InputViews;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 				FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */,
 				FBDBFE23253EB96A0051B0E0 /* Info.plist */,
 				FBDBFE20253EB96A0051B0E0 /* Preview Content */,
+				FBC84843256388B600202D6E /* UIConstants.swift */,
 			);
 			path = "StackOverFlow-Answer";
 			sourceTree = "<group>";
@@ -326,6 +332,7 @@
 				FB7DC12D256288E900962A54 /* EzyMasterAppButton.swift in Sources */,
 				FBC8481225635DCF00202D6E /* ToggleButtonLabl.swift in Sources */,
 				FBC8481B25635E8D00202D6E /* SelectionButton.swift in Sources */,
+				FBC84844256388B600202D6E /* UIConstants.swift in Sources */,
 				FB7DC13225628C9200962A54 /* ToggleButton.swift in Sources */,
 				FB7DC1282562864900962A54 /* InstructorCourseViewModel.swift in Sources */,
 				FBC8482825635F2300202D6E /* DoubleToggleButtonViewModel.swift in Sources */,
@@ -333,6 +340,7 @@
 				FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */,
 				FBC8483F2563820600202D6E /* SectionBackground.swift in Sources */,
 				FBC8483A25637E4600202D6E /* KeyInputTextField.swift in Sources */,
+				FBC8484925638B6D00202D6E /* PopupInputView.swift in Sources */,
 				FBC8483225637E1F00202D6E /* InputViewBackground.swift in Sources */,
 				FBC8482325635EE800202D6E /* DoubleToggleButton.swift in Sources */,
 				FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */,

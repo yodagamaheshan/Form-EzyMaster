@@ -24,17 +24,14 @@ struct KeyInputTextField: View {
             InputViewBackground()
             getTextField()
         }
-        .frame(height: height, alignment: .center)
+        .frame(height: UIConstants.height, alignment: .center)
     }
     
     //MARK: constant and method
-    let height: CGFloat = 48
-    let textFieldLeadingAndTralingPadding: CGFloat = 21
-    
     fileprivate func getTextField() -> some View {
         return TextField(placeHolder, text: $text)
             .keyboardType(keyBoardType)
-            .padding([.leading, .trailing], textFieldLeadingAndTralingPadding)
+            .padding([.leading, .trailing], UIConstants.textFieldLeadingAndTralingPadding)
     }
 }
 

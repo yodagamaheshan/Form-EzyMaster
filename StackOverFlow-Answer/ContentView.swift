@@ -27,6 +27,15 @@ struct ContentView: View {
                 if RHSSelection {
                     getRHSView()
                 }
+                ZStack {
+                    SectionBackground()
+                    VStack {
+                        PopupInputView(placeHolder: "Placeholder",value: "Value")
+                        PopupInputView(placeHolder: "Placeholder",value: nil)
+                    }
+                    .padding()
+                }
+                .padding()
                 ToggleButton(isSelected: $isSelected, title: "Per week")
                 EzyMasterAppButton(action: viewModel.submit, title: "Submit")
             }
@@ -45,6 +54,7 @@ struct ContentView: View {
             }
             .padding()
         }
+        .padding()
     }
 }
 
@@ -53,4 +63,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
