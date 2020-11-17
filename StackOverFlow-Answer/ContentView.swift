@@ -19,17 +19,6 @@ struct ContentView: View {
     
     var titlesOfDoubleToggleButton = DoubleToggleButtonViewModel.Titles(LHSTitle: "LHS title", RHSTitle: "RHS title")
     
-    fileprivate func getRHSView() -> some View {
-        return ZStack {
-            SectionBackground()
-            VStack {
-                KeyInputTextField(placeHolder: "Course title", text: $coursetitle)
-                KeyInputTextField(placeHolder: "Short description", text: $courseDescription)
-            }
-            .padding()
-        }
-    }
-    
     var body: some View {
         
         ScrollView {
@@ -44,6 +33,18 @@ struct ContentView: View {
             .animation(.spring())
         }
         .background(Color.pink.opacity(0.2))
+    }
+    
+    //MARK: constant and methods
+    fileprivate func getRHSView() -> some View {
+        return ZStack {
+            SectionBackground()
+            VStack {
+                KeyInputTextField(placeHolder: "Course title", text: $coursetitle)
+                KeyInputTextField(placeHolder: "Short description", text: $courseDescription)
+            }
+            .padding()
+        }
     }
 }
 
