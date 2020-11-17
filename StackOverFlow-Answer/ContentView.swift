@@ -18,9 +18,17 @@ struct ContentView: View {
     var body: some View {
         
         ScrollView {
-            DoubleToggleButton(titles: titlesOfDoubleToggleButton, LHSSelection: $LHSSelecetion, RHSSelection: $RHSSelection)
-            ToggleButton(isSelected: $isSelected, title: "Per week")
-            EzyMasterAppButton(action: viewModel.submit, title: "Submit")
+            VStack {
+                DoubleToggleButton(titles: titlesOfDoubleToggleButton, LHSSelection: $LHSSelecetion, RHSSelection: $RHSSelection)
+                if RHSSelection {
+                    RoundedRectangle(cornerRadius: 20)
+                        .frame(height: 200)
+                        .padding()
+                }
+                
+                ToggleButton(isSelected: $isSelected, title: "Per week")
+                EzyMasterAppButton(action: viewModel.submit, title: "Submit")
+            }
         }
         .background(Color.pink.opacity(0.2))
     }
