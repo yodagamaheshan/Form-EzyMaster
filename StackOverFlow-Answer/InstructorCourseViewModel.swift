@@ -58,3 +58,16 @@ extension InstructorCourseViewModel {
         get {course.outComes.joined(separator: ",")}
     }
 }
+
+//MARK: Price section
+extension InstructorCourseViewModel {
+    var price: String {
+        set{ course.price = Int(newValue)}
+        get{ course.price?.description ?? "" }
+    }
+    
+    var discountedPrice: String {
+        set{ course.discountedPrice = Int(newValue)}
+        get{ course.discountedPrice?.description ?? ""}
+    }
+}

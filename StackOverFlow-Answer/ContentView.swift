@@ -11,6 +11,8 @@ import Combine
 struct ContentView: View {
     @ObservedObject private var viewModel = InstructorCourseViewModel()
     
+    
+    
     var body: some View {
         
         ScrollView {
@@ -18,6 +20,7 @@ struct ContentView: View {
                 getBasicSection()
                 getRequirementSection()
                 getOutComesSection()
+                getPricingSection()
                 
                 EzyMasterAppButton(action: viewModel.submit, title: "Submit")
             }
@@ -101,6 +104,32 @@ extension ContentView{
     fileprivate func getOutComesSection() -> EzyMasterFormSectionView<KeyInputTextField> {
         return EzyMasterFormSectionView(title: "Outcomes") {
             KeyInputTextField(placeHolder: "ex: outcome 1, outcome 2", text: $viewModel.outcomes)
+        }
+    }
+}
+
+//MARK: Pricing
+extension ContentView{
+    fileprivate func getPricingSection() -> some View {
+        return EzyMasterFormSectionView(title: "Pricing") {
+            VStack {
+                CheckButton(isSelected: $viewModel.course.isFreeCourse, title: "Check if this is a free course")
+                //Free course tsack view
+                if !viewModel.course.isFreeCourse {
+                    getPricingView()
+                }
+            }
+        }
+    }
+    
+    /// Not free views
+    fileprivate func getPricingView() -> some View {
+        return VStack {
+            KeyInputTextField(placeHolder: "Course price($)", keyBoardType: .numberPad, text: $viewModel.price)
+            CheckButton(isSelected: $viewModel.course.discountFlag, title: "Check if this course has discount")
+            if viewModel.course.discountFlag {
+                KeyInputTextField(placeHolder: "Discounted price($)", keyBoardType: .numberPad, text: $viewModel.discountedPrice)
+            }
         }
     }
 }

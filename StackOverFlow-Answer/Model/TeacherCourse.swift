@@ -29,9 +29,9 @@ struct TeacherCourse {
     var requirements: [String] = []
     var outComes: [String] = []
     var isFreeCourse: Bool = false
-    var price: Double?
+    var price: Int?
     var discountFlag: Bool = false
-    var discountedPrice: Double = 0
+    var discountedPrice: Int? = nil
     var courseOverViewProvider: OverViewProvider?
     var overViewUrl: String = ""
     var thumbnail: Image?
