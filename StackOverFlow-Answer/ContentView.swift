@@ -75,7 +75,7 @@ extension ContentView {
         }
     }
     
-    fileprivate func getPerWeekView() -> VStack<TupleView<(PopupInputView, PopupInputView)>> {
+    fileprivate func getPerWeekView() -> some View {
         return VStack {
             PopupInputView(placeHolder: "Select course duration",value: viewModel.courseDurationValue)
             PopupInputView(placeHolder: "Select day", value: viewModel.startDay)
