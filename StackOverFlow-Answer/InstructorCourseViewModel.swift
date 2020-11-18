@@ -10,10 +10,6 @@ import SwiftUI
 
 class InstructorCourseViewModel:  ObservableObject{
     @Published var course: TeacherCourse = .init()
-    
-    func submit() {
-        
-    }
 }
 
 //MARK: basic section
@@ -76,5 +72,12 @@ extension InstructorCourseViewModel {
 extension InstructorCourseViewModel {
     var overViewProviderValue: String? {
         course.courseOverViewProvider?.rawValue
+    }
+}
+
+//MARK: data
+extension InstructorCourseViewModel {
+    func submit() {
+        
     }
 }
