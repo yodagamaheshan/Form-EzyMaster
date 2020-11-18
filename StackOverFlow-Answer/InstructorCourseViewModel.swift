@@ -25,17 +25,12 @@ extension InstructorCourseViewModel {
         course.level?.rawValue.capitalized
     }
     var isLiveCourse: Bool {
-        set{
-            course.courseType = newValue ? CourseType.live:.local
-        }
-        get{
-            course.courseType == .live
-        }
+        set{course.courseType = newValue ? CourseType.live:.local}
+        get{course.courseType == .live}
     }
     var isPerWeek: Bool {
         course.group == .perWeek
     }
-    
     var courseDurationValue: String? {
         course.courseDuration?.getTitle()
     }
@@ -46,29 +41,20 @@ extension InstructorCourseViewModel {
     var startDate: String? {
         nil
     }
-    
 }
 
 //MARK: requirenments section
 extension InstructorCourseViewModel {
     var requirements: String {
-        set {
-            course.requirements = newValue.components(separatedBy: ",")
-        }
-        get {
-            course.requirements.joined(separator: ",")
-        }
+        set {course.requirements = newValue.components(separatedBy: ",")}
+        get {course.requirements.joined(separator: ",")}
     }
 }
 
 //MARK: Outcomes section
 extension InstructorCourseViewModel {
     var outcomes: String {
-        set {
-            course.outComes = newValue.components(separatedBy: ",")
-        }
-        get {
-            course.outComes.joined(separator: ",")
-        }
+        set { course.outComes = newValue.components(separatedBy: ",")}
+        get {course.outComes.joined(separator: ",")}
     }
 }
