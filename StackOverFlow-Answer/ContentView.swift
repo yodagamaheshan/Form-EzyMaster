@@ -11,6 +11,7 @@ import Combine
 struct ContentView: View {
     @ObservedObject private var viewModel = InstructorCourseViewModel()
     
+    
     var body: some View {
         
         ScrollView {
@@ -19,6 +20,7 @@ struct ContentView: View {
                 getRequirementSection()
                 getOutComesSection()
                 getPricingSection()
+                getMediaSection()
                 
                 EzyMasterAppButton(action: viewModel.submit, title: "Submit")
             }
@@ -89,7 +91,7 @@ extension ContentView {
 }
 
 //MARK: Requirements
-extension ContentView{
+extension ContentView {
     fileprivate func getRequirementSection() -> some View {
         return EzyMasterFormSectionView(title: "Requirements") {
             KeyInputTextField(placeHolder: "ex: requirenment 1,requirenment 2", text: $viewModel.requirements)
@@ -98,7 +100,7 @@ extension ContentView{
 }
 
 //MARK: Outcomes
-extension ContentView{
+extension ContentView {
     fileprivate func getOutComesSection() -> EzyMasterFormSectionView<KeyInputTextField> {
         return EzyMasterFormSectionView(title: "Outcomes") {
             KeyInputTextField(placeHolder: "ex: outcome 1, outcome 2", text: $viewModel.outcomes)
@@ -107,7 +109,7 @@ extension ContentView{
 }
 
 //MARK: Pricing
-extension ContentView{
+extension ContentView {
     fileprivate func getPricingSection() -> some View {
         return EzyMasterFormSectionView(title: "Pricing") {
             VStack {
@@ -132,6 +134,21 @@ extension ContentView{
     }
 }
 
+//MARK: Media
+extension ContentView {
+    fileprivate func getMediaSection() -> some View {
+        return EzyMasterFormSectionView(title: "Media") {
+            VStack {
+                PopupInputView(placeHolder: "Select overView provider", value: viewModel.overViewProviderValue)
+                KeyInputTextField(placeHolder: "Course overview url", keyBoardType: .URL, text: $viewModel.course.overViewUrl)
+                RoundedRectangle(cornerRadius: 15)
+                    .frame(height: 200)
+            }
+            
+        }
+    }
+    
+}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

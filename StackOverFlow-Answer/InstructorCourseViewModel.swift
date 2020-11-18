@@ -71,3 +71,10 @@ extension InstructorCourseViewModel {
         get{ course.discountedPrice?.description ?? ""}
     }
 }
+
+//MARK: Media
+extension InstructorCourseViewModel {
+    var overViewProviderValue: String? {
+        course.courseOverViewProvider?.rawValue
+    }
+}
