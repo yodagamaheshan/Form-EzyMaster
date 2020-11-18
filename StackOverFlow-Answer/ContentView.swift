@@ -11,8 +11,6 @@ import Combine
 struct ContentView: View {
     @ObservedObject private var viewModel = InstructorCourseViewModel()
     
-    
-    
     var body: some View {
         
         ScrollView {
@@ -25,13 +23,14 @@ struct ContentView: View {
                 getSEOSection()
                 EzyMasterAppButton(action: viewModel.submit, title: "Submit")
             }
-            .padding(22)
+            .padding(scrollViewContentPadding)
             .animation(.spring())
         }
         .background(Color.pink.opacity(0.2))
     }
     
     //MARK: constant and methods
+    let scrollViewContentPadding: CGFloat = 22
 }
 
 //MARK: Basic section View
