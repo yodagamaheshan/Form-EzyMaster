@@ -65,7 +65,7 @@ extension ContentView {
         }
     }
     
-    fileprivate func getViewBelowToIsLiveStack() -> VStack<TupleView<(DateInputView, DateInputView, DateInputView, PopupInputView, CheckButton)>> {
+    fileprivate func getViewBelowToIsLiveStack() -> some View {
         return VStack {
             DateInputView(placeHolder: "Select start date", value: nil)
             DateInputView(placeHolder: "Select start time", value: nil)
