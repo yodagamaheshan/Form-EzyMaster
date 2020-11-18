@@ -11,6 +11,8 @@ import Combine
 struct ContentView: View {
     @ObservedObject private var viewModel = InstructorCourseViewModel()
     
+    
+    
     var body: some View {
         
         ScrollView {
@@ -20,7 +22,7 @@ struct ContentView: View {
                 getOutComesSection()
                 getPricingSection()
                 getMediaSection()
-                
+                getSEOSection()
                 EzyMasterAppButton(action: viewModel.submit, title: "Submit")
             }
             .padding(22)
@@ -142,12 +144,27 @@ extension ContentView {
                 KeyInputTextField(placeHolder: "Course overview url", keyBoardType: .URL, text: $viewModel.course.overViewUrl)
                 //TODO: replace with image picker
                 RoundedRectangle(cornerRadius: 15)
+                    .fill(Color.gray)
                     .frame(height: 200)
             }
         }
     }
 }
 
+//MARK: SEO
+extension ContentView{
+    fileprivate func getSEOSection() -> some View {
+        return EzyMasterFormSectionView(title: "SEO") {
+            VStack {
+                KeyInputTextField(placeHolder: "Meta description", text: $viewModel.course.metaDescription)
+                //TODO: replace with Text...
+                RoundedRectangle(cornerRadius: 15)
+                    .fill(Color.gray)
+                    .frame(height: 200)
+            }
+        }
+    }
+}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
