@@ -28,6 +28,7 @@ struct ContentView: View {
 }
 
 //MARK: Basic section View
+//TODO: refactor if possible
 extension ContentView {
     fileprivate func getBasicSection() -> some View {
         return EzyMasterFormSectionView(title: "Basic") {
