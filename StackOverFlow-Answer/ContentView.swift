@@ -22,7 +22,7 @@ struct ContentView: View {
                 getMediaSection()
                 getSEOSection()
                 
-                EzyMasterAppButton(action: viewModel.submit, title: "Submit")
+                EzyMasterAppButton(action: viewModel.submit, title: "Submit", isValied: viewModel.course.isValiedCourse)
             }
             .padding(scrollViewContentPadding)
             .animation(.spring())

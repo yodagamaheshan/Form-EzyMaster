@@ -10,6 +10,7 @@ import SwiftUI
 struct EzyMasterAppButton: View {
     let action: () -> Void
     let title: String
+    let isValied: Bool
     
     var body: some View {
         Button(action: {
@@ -22,13 +23,14 @@ struct EzyMasterAppButton: View {
             Spacer()
         })
         .frame(height: 48, alignment: .center)
-        .background(Color.blue)
+        .background(isValied ? Color.blue:.gray)
         .cornerRadius(6)
+        .disabled(!isValied)
     }
 }
 
 struct EzyMasterAppButton_Previews: PreviewProvider {
     static var previews: some View {
-        EzyMasterAppButton(action: {}, title: "Title")
+        EzyMasterAppButton(action: {}, title: "Title", isValied: true)
     }
 }

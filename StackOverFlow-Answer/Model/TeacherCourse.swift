@@ -53,7 +53,7 @@ struct TeacherCourse {
     var courseID: String = ""
     //id only available when user going to update
     
-    var valiedCourse: Bool {
+    var isValiedCourse: Bool {
         if isBasicSectionValied && isRequirementAndOutcomesValied && isPricingValied && isValiedMediaSection && isValiedSEO {
             return true
         }
@@ -154,7 +154,8 @@ extension TeacherCourse {
 //MARK: media
 extension TeacherCourse {
     private var isValiedMediaSection: Bool {
-        if courseOverViewProvider == nil || overViewUrl.isEmpty || thumbnail == nil {
+        //FIXME: add -> || thumbnail == nil
+        if courseOverViewProvider == nil || overViewUrl.isEmpty {
             return false
         }
         return true
@@ -164,7 +165,8 @@ extension TeacherCourse {
 //MARK: SEO
 extension TeacherCourse {
     private var isValiedSEO: Bool {
-        if metaKeywords.isEmpty || metaDescription.isEmpty {
+        //FIXME: add -> || metaDescription.isEmpty 
+        if metaKeywords.isEmpty {
             return false
         }
         return true
