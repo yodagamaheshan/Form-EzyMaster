@@ -144,11 +144,10 @@ extension ContentView {
                 RoundedRectangle(cornerRadius: 15)
                     .frame(height: 200)
             }
-            
         }
     }
-    
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
