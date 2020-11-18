@@ -11,14 +11,13 @@ import Combine
 struct ContentView: View {
     @ObservedObject private var viewModel = InstructorCourseViewModel()
     
-    
-    
     var body: some View {
         
         ScrollView {
             VStack {
                 getBasicSection()
                 getRequirementSection()
+                getOutComesSection()
                 
                 EzyMasterAppButton(action: viewModel.submit, title: "Submit")
             }
@@ -93,6 +92,15 @@ extension ContentView{
     fileprivate func getRequirementSection() -> some View {
         return EzyMasterFormSectionView(title: "Requirements") {
             KeyInputTextField(placeHolder: "ex: requirenment 1,requirenment 2", text: $viewModel.requirements)
+        }
+    }
+}
+
+//MARK: Outcomes
+extension ContentView{
+    fileprivate func getOutComesSection() -> EzyMasterFormSectionView<KeyInputTextField> {
+        return EzyMasterFormSectionView(title: "Outcomes") {
+            KeyInputTextField(placeHolder: "ex: outcome 1, outcome 2", text: $viewModel.outcomes)
         }
     }
 }

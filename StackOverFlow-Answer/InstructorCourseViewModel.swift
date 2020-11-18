@@ -53,6 +53,18 @@ extension InstructorCourseViewModel {
 extension InstructorCourseViewModel {
     var requirements: String {
         set {
+            course.requirements = newValue.components(separatedBy: ",")
+        }
+        get {
+            course.requirements.joined(separator: ",")
+        }
+    }
+}
+
+//MARK: Outcomes section
+extension InstructorCourseViewModel {
+    var outcomes: String {
+        set {
             course.outComes = newValue.components(separatedBy: ",")
         }
         get {
