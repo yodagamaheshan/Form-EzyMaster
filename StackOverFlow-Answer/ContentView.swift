@@ -11,8 +11,6 @@ import Combine
 struct ContentView: View {
     @ObservedObject private var viewModel = InstructorCourseViewModel()
     
-    
-    
     var body: some View {
         
         ScrollView {
