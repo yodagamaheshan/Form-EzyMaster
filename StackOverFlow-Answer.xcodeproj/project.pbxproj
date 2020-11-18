@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FB46817E2564AD5D00048A9D /* TeacherCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46817D2564AD5D00048A9D /* TeacherCourse.swift */; };
 		FB4681862564B2EF00048A9D /* Inported.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4681852564B2EF00048A9D /* Inported.swift */; };
+		FB4681912564B71400048A9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4681902564B71400048A9D /* ContentView.swift */; };
+		FB4681962564B9D400048A9D /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4681952564B9D400048A9D /* HomeModel.swift */; };
 		FB7DC1282562864900962A54 /* InstructorCourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */; };
 		FB7DC12D256288E900962A54 /* EzyMasterAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */; };
 		FB7DC13225628C9200962A54 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC13125628C9200962A54 /* CheckButton.swift */; };
@@ -17,8 +19,8 @@
 		FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */; };
 		FBC8481225635DCF00202D6E /* ToggleButtonLabl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8481125635DCF00202D6E /* ToggleButtonLabl.swift */; };
 		FBC8481B25635E8D00202D6E /* SelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8481A25635E8D00202D6E /* SelectionButton.swift */; };
-		FBC8482325635EE800202D6E /* DoubleToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8482225635EE800202D6E /* DoubleToggleButton.swift */; };
-		FBC8482825635F2300202D6E /* DoubleToggleButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8482725635F2300202D6E /* DoubleToggleButtonViewModel.swift */; };
+		FBC8482325635EE800202D6E /* GroupTypeToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8482225635EE800202D6E /* GroupTypeToggleButton.swift */; };
+		FBC8482825635F2300202D6E /* GroupTypeToggleButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8482725635F2300202D6E /* GroupTypeToggleButtonViewModel.swift */; };
 		FBC8483225637E1F00202D6E /* InputViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8483125637E1F00202D6E /* InputViewBackground.swift */; };
 		FBC8483A25637E4600202D6E /* KeyInputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8483925637E4600202D6E /* KeyInputTextField.swift */; };
 		FBC8483F2563820600202D6E /* SectionBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8483E2563820600202D6E /* SectionBackground.swift */; };
@@ -27,7 +29,6 @@
 		FBC8485125639BF100202D6E /* RoundBackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8485025639BF100202D6E /* RoundBackgroundImage.swift */; };
 		FBC848612563AB4500202D6E /* DateInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC848602563AB4500202D6E /* DateInputView.swift */; };
 		FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */; };
-		FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */; };
 		FBDBFE1F253EB96A0051B0E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */; };
 		FBDBFE22253EB96A0051B0E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDBFE21253EB96A0051B0E0 /* Preview Assets.xcassets */; };
 		FBDBFE2D253EB96B0051B0E0 /* StackOverFlow_AnswerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDBFE2C253EB96B0051B0E0 /* StackOverFlow_AnswerTests.swift */; };
@@ -54,6 +55,8 @@
 /* Begin PBXFileReference section */
 		FB46817D2564AD5D00048A9D /* TeacherCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherCourse.swift; sourceTree = "<group>"; };
 		FB4681852564B2EF00048A9D /* Inported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inported.swift; sourceTree = "<group>"; };
+		FB4681902564B71400048A9D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB4681952564B9D400048A9D /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructorCourseViewModel.swift; sourceTree = "<group>"; };
 		FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzyMasterAppButton.swift; sourceTree = "<group>"; };
 		FB7DC13125628C9200962A54 /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
@@ -62,8 +65,8 @@
 		FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivenSwiftUIView.swift; sourceTree = "<group>"; };
 		FBC8481125635DCF00202D6E /* ToggleButtonLabl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButtonLabl.swift; sourceTree = "<group>"; };
 		FBC8481A25635E8D00202D6E /* SelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionButton.swift; sourceTree = "<group>"; };
-		FBC8482225635EE800202D6E /* DoubleToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleToggleButton.swift; sourceTree = "<group>"; };
-		FBC8482725635F2300202D6E /* DoubleToggleButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleToggleButtonViewModel.swift; sourceTree = "<group>"; };
+		FBC8482225635EE800202D6E /* GroupTypeToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTypeToggleButton.swift; sourceTree = "<group>"; };
+		FBC8482725635F2300202D6E /* GroupTypeToggleButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTypeToggleButtonViewModel.swift; sourceTree = "<group>"; };
 		FBC8483125637E1F00202D6E /* InputViewBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewBackground.swift; sourceTree = "<group>"; };
 		FBC8483925637E4600202D6E /* KeyInputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyInputTextField.swift; sourceTree = "<group>"; };
 		FBC8483E2563820600202D6E /* SectionBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBackground.swift; sourceTree = "<group>"; };
@@ -73,7 +76,6 @@
 		FBC848602563AB4500202D6E /* DateInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputView.swift; sourceTree = "<group>"; };
 		FBDBFE17253EB96A0051B0E0 /* StackOverFlow-Answer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StackOverFlow-Answer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverFlow_AnswerApp.swift; sourceTree = "<group>"; };
-		FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBDBFE21253EB96A0051B0E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FBDBFE23253EB96A0051B0E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				FB4681852564B2EF00048A9D /* Inported.swift */,
+				FB4681952564B9D400048A9D /* HomeModel.swift */,
 			);
 			path = "Imported from Ezymaster";
 			sourceTree = "<group>";
@@ -138,8 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				FBC8481A25635E8D00202D6E /* SelectionButton.swift */,
-				FBC8482225635EE800202D6E /* DoubleToggleButton.swift */,
-				FBC8482725635F2300202D6E /* DoubleToggleButtonViewModel.swift */,
+				FBC8482225635EE800202D6E /* GroupTypeToggleButton.swift */,
+				FBC8482725635F2300202D6E /* GroupTypeToggleButtonViewModel.swift */,
 				FBC8481125635DCF00202D6E /* ToggleButtonLabl.swift */,
 			);
 			path = DoubleToggleButton;
@@ -203,11 +206,11 @@
 				FB4681782564AA7400048A9D /* Imported from Ezymaster */,
 				FBC8483025637E0B00202D6E /* InputViews */,
 				FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */,
-				FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */,
+				FB4681902564B71400048A9D /* ContentView.swift */,
+				FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */,
 				FBC8481925635E7100202D6E /* DoubleToggleButton */,
 				FB7DC13125628C9200962A54 /* CheckButton.swift */,
 				FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */,
-				FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */,
 				FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */,
 				FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */,
 				FBDBFE23253EB96A0051B0E0 /* Info.plist */,
@@ -382,19 +385,20 @@
 				FBC8481B25635E8D00202D6E /* SelectionButton.swift in Sources */,
 				FBC84844256388B600202D6E /* UIConstants.swift in Sources */,
 				FB7DC13225628C9200962A54 /* CheckButton.swift in Sources */,
+				FB4681912564B71400048A9D /* ContentView.swift in Sources */,
 				FB7DC1282562864900962A54 /* InstructorCourseViewModel.swift in Sources */,
 				FBAF43EB2563D6CD00D42C99 /* EzyMasterFormSectionView.swift in Sources */,
-				FBC8482825635F2300202D6E /* DoubleToggleButtonViewModel.swift in Sources */,
+				FBC8482825635F2300202D6E /* GroupTypeToggleButtonViewModel.swift in Sources */,
 				FBC848612563AB4500202D6E /* DateInputView.swift in Sources */,
 				FB4681862564B2EF00048A9D /* Inported.swift in Sources */,
 				FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */,
-				FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */,
 				FBC8483F2563820600202D6E /* SectionBackground.swift in Sources */,
 				FBC8483A25637E4600202D6E /* KeyInputTextField.swift in Sources */,
 				FBC8484925638B6D00202D6E /* PopupInputView.swift in Sources */,
 				FBC8483225637E1F00202D6E /* InputViewBackground.swift in Sources */,
+				FB4681962564B9D400048A9D /* HomeModel.swift in Sources */,
 				FB46817E2564AD5D00048A9D /* TeacherCourse.swift in Sources */,
-				FBC8482325635EE800202D6E /* DoubleToggleButton.swift in Sources */,
+				FBC8482325635EE800202D6E /* GroupTypeToggleButton.swift in Sources */,
 				FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,7 +24,6 @@ struct EzyMasterAppButton: View {
         .frame(height: 48, alignment: .center)
         .background(Color.blue)
         .cornerRadius(6)
-        .padding(22)
     }
 }
 

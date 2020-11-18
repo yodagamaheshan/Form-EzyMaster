@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct SelectionButton: View {
-    @Binding var isSelected: Bool
+    let action: () -> Void
     
     let title: String
+    let isSelected: Bool
     
     var body: some View {
         Button(action: {
-            isSelected = true
+            action()
         }, label: {
             ToggleButtonLabl(title: title, isSelected: isSelected)
         })
@@ -23,6 +24,6 @@ struct SelectionButton: View {
 
 struct SelectionButton_Previews: PreviewProvider {
     static var previews: some View {
-        SelectionButton(isSelected: .constant(true), title: "Title")
+        SelectionButton(action: {}, title: "Title", isSelected: true)
     }
 }

@@ -13,12 +13,12 @@ struct TeacherCourse {
     var title: String = ""
     var shortDescription: String = ""
     var description: String = ""
-    var subCategoryId: Int?
+    var subCategory: Category?
     var level: Level?
-    var courseType: CourseType?
+    var courseType: CourseType = .local
     var classRoomType: ClassRoomType?
     var scheduleTitle: String = ""
-    var group: Group?
+    var group: Group = .once
     var courseDuration: Duration?
     var startDay: Day?
     var startDate: Date?

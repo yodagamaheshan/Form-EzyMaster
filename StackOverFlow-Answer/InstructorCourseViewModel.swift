@@ -9,7 +9,42 @@
 import SwiftUI
 
 class InstructorCourseViewModel:  ObservableObject{
+    @Published var course: TeacherCourse = .init()
+    
     func submit() {
         
     }
+}
+
+//MARK: basic section
+extension InstructorCourseViewModel {
+    var subCategoryName: String? {
+        course.subCategory?.name?.capitalized
+    }
+    var levelValue: String? {
+        course.level?.rawValue.capitalized
+    }
+    var isLiveCourse: Bool {
+        set{
+            course.courseType = newValue ? CourseType.live:.local
+        }
+        get{
+            course.courseType == .live
+        }
+    }
+    var isPerWeek: Bool {
+        course.group == .perWeek
+    }
+    
+    var courseDurationValue: String? {
+        course.courseDuration?.getTitle()
+    }
+    //FIXME:
+    var startDay: String? {
+        nil
+    }
+    var startDate: String? {
+        nil
+    }
+    
 }
