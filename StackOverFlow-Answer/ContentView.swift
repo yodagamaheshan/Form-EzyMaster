@@ -11,11 +11,15 @@ import Combine
 struct ContentView: View {
     @ObservedObject private var viewModel = InstructorCourseViewModel()
     
+    
+    
     var body: some View {
         
         ScrollView {
             VStack {
                 getBasicSection()
+                getRequirementSection()
+                
                 EzyMasterAppButton(action: viewModel.submit, title: "Submit")
             }
             .padding(22)
@@ -80,6 +84,15 @@ extension ContentView {
         return VStack {
             PopupInputView(placeHolder: "Select course duration",value: viewModel.courseDurationValue)
             PopupInputView(placeHolder: "Select day", value: viewModel.startDay)
+        }
+    }
+}
+
+//MARK: Requirements
+extension ContentView{
+    fileprivate func getRequirementSection() -> some View {
+        return EzyMasterFormSectionView(title: "Requirements") {
+            KeyInputTextField(placeHolder: "ex: requirenment 1,requirenment 2", text: $viewModel.requirements)
         }
     }
 }

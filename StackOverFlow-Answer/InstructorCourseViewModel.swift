@@ -48,3 +48,15 @@ extension InstructorCourseViewModel {
     }
     
 }
+
+//MARK: requirenments section
+extension InstructorCourseViewModel {
+    var requirements: String {
+        set {
+            course.outComes = newValue.components(separatedBy: ",")
+        }
+        get {
+            course.outComes.joined(separator: ",")
+        }
+    }
+}
