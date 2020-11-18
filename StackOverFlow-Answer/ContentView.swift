@@ -21,6 +21,7 @@ struct ContentView: View {
                 getPricingSection()
                 getMediaSection()
                 getSEOSection()
+                
                 EzyMasterAppButton(action: viewModel.submit, title: "Submit")
             }
             .padding(scrollViewContentPadding)
