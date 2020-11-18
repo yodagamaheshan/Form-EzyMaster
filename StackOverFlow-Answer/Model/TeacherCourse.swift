@@ -153,7 +153,7 @@ extension TeacherCourse {
 
 //MARK: media
 extension TeacherCourse {
-    var isValiedMediaSection: Bool {
+    private var isValiedMediaSection: Bool {
         if courseOverViewProvider == nil || overViewUrl.isEmpty || thumbnail == nil {
             return false
         }
@@ -163,7 +163,7 @@ extension TeacherCourse {
 
 //MARK: SEO
 extension TeacherCourse {
-    var isValiedSEO: Bool {
+    private var isValiedSEO: Bool {
         if metaKeywords.isEmpty || metaDescription.isEmpty {
             return false
         }
