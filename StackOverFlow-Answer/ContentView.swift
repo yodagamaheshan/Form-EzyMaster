@@ -32,25 +32,24 @@ extension ContentView {
     fileprivate func getBasicSection() -> some View {
         return EzyMasterFormSectionView(title: "Basic") {
             VStack {
-                
-                VStack {
-                    KeyInputTextField(placeHolder: "Course title", text: $viewModel.course.title)
-                    KeyInputTextField(placeHolder: "Short description", text: $viewModel.course.shortDescription)
-                    KeyInputTextField(placeHolder: "Description", text: $viewModel.course.description)
-                    PopupInputView(placeHolder: "Select sub category",value: viewModel.subCategoryName)
-                    PopupInputView(placeHolder: "Select level",value: viewModel.subCategoryName)
-                    CheckButton(isSelected: $viewModel.isLiveCourse, title: "Check if this course is live")
-                }
+                getViewAboveIsLiveStack()
                 //isLive stack
                 if viewModel.isLiveCourse {
                     getIsLiveView()
                 }
-                DateInputView(placeHolder: "Select start date", value: nil)
-                DateInputView(placeHolder: "Select start time", value: nil)
-                DateInputView(placeHolder: "Select end time", value: nil)
-                PopupInputView(placeHolder: "Select language made in",value: nil)
-                CheckButton(isSelected: $viewModel.course.isTopCourse, title: "Check if this course is top course")
+                getViewBelowToIsLiveStack()
             }
+        }
+    }
+    
+    fileprivate func getViewAboveIsLiveStack() -> some View {
+        return VStack {
+            KeyInputTextField(placeHolder: "Course title", text: $viewModel.course.title)
+            KeyInputTextField(placeHolder: "Short description", text: $viewModel.course.shortDescription)
+            KeyInputTextField(placeHolder: "Description", text: $viewModel.course.description)
+            PopupInputView(placeHolder: "Select sub category",value: viewModel.subCategoryName)
+            PopupInputView(placeHolder: "Select level",value: viewModel.subCategoryName)
+            CheckButton(isSelected: $viewModel.isLiveCourse, title: "Check if this course is live")
         }
     }
     
@@ -63,6 +62,16 @@ extension ContentView {
             if viewModel.isPerWeek {
                 getPerWeekView()
             }
+        }
+    }
+    
+    fileprivate func getViewBelowToIsLiveStack() -> VStack<TupleView<(DateInputView, DateInputView, DateInputView, PopupInputView, CheckButton)>> {
+        return VStack {
+            DateInputView(placeHolder: "Select start date", value: nil)
+            DateInputView(placeHolder: "Select start time", value: nil)
+            DateInputView(placeHolder: "Select end time", value: nil)
+            PopupInputView(placeHolder: "Select language made in",value: nil)
+            CheckButton(isSelected: $viewModel.course.isTopCourse, title: "Check if this course is top course")
         }
     }
     
