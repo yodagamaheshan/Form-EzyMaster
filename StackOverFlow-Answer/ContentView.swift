@@ -11,7 +11,6 @@ import Combine
 struct ContentView: View {
     @ObservedObject private var viewModel = InstructorCourseViewModel()
     
-    
     var body: some View {
         
         ScrollView {
@@ -141,6 +140,7 @@ extension ContentView {
             VStack {
                 PopupInputView(placeHolder: "Select overView provider", value: viewModel.overViewProviderValue)
                 KeyInputTextField(placeHolder: "Course overview url", keyBoardType: .URL, text: $viewModel.course.overViewUrl)
+                //TODO: replace with image picker
                 RoundedRectangle(cornerRadius: 15)
                     .frame(height: 200)
             }
