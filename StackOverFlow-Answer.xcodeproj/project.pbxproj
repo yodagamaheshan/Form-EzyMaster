@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB46817E2564AD5D00048A9D /* TeacherCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46817D2564AD5D00048A9D /* TeacherCourse.swift */; };
+		FB4681862564B2EF00048A9D /* Inported.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4681852564B2EF00048A9D /* Inported.swift */; };
 		FB7DC1282562864900962A54 /* InstructorCourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */; };
 		FB7DC12D256288E900962A54 /* EzyMasterAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */; };
 		FB7DC13225628C9200962A54 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC13125628C9200962A54 /* CheckButton.swift */; };
@@ -50,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB46817D2564AD5D00048A9D /* TeacherCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherCourse.swift; sourceTree = "<group>"; };
+		FB4681852564B2EF00048A9D /* Inported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inported.swift; sourceTree = "<group>"; };
 		FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructorCourseViewModel.swift; sourceTree = "<group>"; };
 		FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzyMasterAppButton.swift; sourceTree = "<group>"; };
 		FB7DC13125628C9200962A54 /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
@@ -107,6 +111,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB4681782564AA7400048A9D /* Imported from Ezymaster */ = {
+			isa = PBXGroup;
+			children = (
+				FB4681852564B2EF00048A9D /* Inported.swift */,
+			);
+			path = "Imported from Ezymaster";
+			sourceTree = "<group>";
+		};
+		FB46817C2564AD4C00048A9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB46817D2564AD5D00048A9D /* TeacherCourse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FB9C4C7D2541169400CAC446 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +199,8 @@
 		FBDBFE19253EB96A0051B0E0 /* StackOverFlow-Answer */ = {
 			isa = PBXGroup;
 			children = (
+				FB46817C2564AD4C00048A9D /* Model */,
+				FB4681782564AA7400048A9D /* Imported from Ezymaster */,
 				FBC8483025637E0B00202D6E /* InputViews */,
 				FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */,
 				FBDBFE1C253EB96A0051B0E0 /* ContentView.swift */,
@@ -364,12 +386,14 @@
 				FBAF43EB2563D6CD00D42C99 /* EzyMasterFormSectionView.swift in Sources */,
 				FBC8482825635F2300202D6E /* DoubleToggleButtonViewModel.swift in Sources */,
 				FBC848612563AB4500202D6E /* DateInputView.swift in Sources */,
+				FB4681862564B2EF00048A9D /* Inported.swift in Sources */,
 				FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */,
 				FBDBFE1D253EB96A0051B0E0 /* ContentView.swift in Sources */,
 				FBC8483F2563820600202D6E /* SectionBackground.swift in Sources */,
 				FBC8483A25637E4600202D6E /* KeyInputTextField.swift in Sources */,
 				FBC8484925638B6D00202D6E /* PopupInputView.swift in Sources */,
 				FBC8483225637E1F00202D6E /* InputViewBackground.swift in Sources */,
+				FB46817E2564AD5D00048A9D /* TeacherCourse.swift in Sources */,
 				FBC8482325635EE800202D6E /* DoubleToggleButton.swift in Sources */,
 				FBDBFE1B253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift in Sources */,
 			);
