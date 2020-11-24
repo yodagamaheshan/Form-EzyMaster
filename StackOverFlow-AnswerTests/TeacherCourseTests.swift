@@ -27,6 +27,30 @@ class TeacherCourseTests: XCTestCase {
         XCTAssertTrue(isValied, "Hesh: Course is not valied")
     }
     
+    func testValiedSEO() {
+        let teacherCourse = TeacherCourse(title: "", shortDescription: "", description: "", subCategory: nil, level: nil, courseType: .live, classRoomType: nil, scheduleTitle: "", group: .once, courseDuration: nil, startDay: nil, startDate: nil, startTime: nil, endTime: nil, languageMadeIn: nil, isTopCourse: false, requirements: [], outComes: [], isFreeCourse: false, price: nil, discountFlag: false, discountedPrice: nil, courseOverViewProvider: nil, overViewUrl: "", thumbnail: nil, metaKeywords: "meta keyword", metaDescription: "meta description", courseID: "")
+        let isSEOValied = teacherCourse.isValiedSEO
+        XCTAssertTrue(isSEOValied)
+    }
+    
+    func testInvaliedMetaKeywordsSEO() {
+        let teacherCourse = TeacherCourse(title: "", shortDescription: "", description: "", subCategory: nil, level: nil, courseType: .live, classRoomType: nil, scheduleTitle: "", group: .once, courseDuration: nil, startDay: nil, startDate: nil, startTime: nil, endTime: nil, languageMadeIn: nil, isTopCourse: false, requirements: [], outComes: [], isFreeCourse: false, price: nil, discountFlag: false, discountedPrice: nil, courseOverViewProvider: nil, overViewUrl: "", thumbnail: nil, metaKeywords: "", metaDescription: "meta description", courseID: "")
+        let isSEOValied = teacherCourse.isValiedSEO
+        XCTAssertFalse(isSEOValied)
+    }
+    
+    func testInvaliedMetaDescriptionSEO() {
+        let teacherCourse = TeacherCourse(title: "", shortDescription: "", description: "", subCategory: nil, level: nil, courseType: .live, classRoomType: nil, scheduleTitle: "", group: .once, courseDuration: nil, startDay: nil, startDate: nil, startTime: nil, endTime: nil, languageMadeIn: nil, isTopCourse: false, requirements: [], outComes: [], isFreeCourse: false, price: nil, discountFlag: false, discountedPrice: nil, courseOverViewProvider: nil, overViewUrl: "", thumbnail: nil, metaKeywords: "", metaDescription: "meta description", courseID: "")
+        let isSEOValied = teacherCourse.isValiedSEO
+        XCTAssertFalse(isSEOValied)
+    }
+    
+    func testInvaliedMetaKeywordsAndMetaDescriptionSEO() {
+        let teacherCourse = TeacherCourse(title: "", shortDescription: "", description: "", subCategory: nil, level: nil, courseType: .live, classRoomType: nil, scheduleTitle: "", group: .once, courseDuration: nil, startDay: nil, startDate: nil, startTime: nil, endTime: nil, languageMadeIn: nil, isTopCourse: false, requirements: [], outComes: [], isFreeCourse: false, price: nil, discountFlag: false, discountedPrice: nil, courseOverViewProvider: nil, overViewUrl: "", thumbnail: nil, metaKeywords: "", metaDescription: "", courseID: "")
+        let isSEOValied = teacherCourse.isValiedSEO
+        XCTAssertFalse(isSEOValied)
+    }
+    
     func testPerformanceExample() throws {
         
     }
