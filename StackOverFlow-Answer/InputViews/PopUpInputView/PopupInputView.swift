@@ -31,15 +31,27 @@ struct PopupInputView: View {
     
     //MARK: constant and method
     fileprivate func getMenuItem() -> some View {
-        return ForEach(selectableItems, id: \.self) { (item) in
-            Button {
-                selection = item
-            } label: {
-                HStack {
-                    Text(item)
+        return VStack {
+            ForEach(selectableItems, id: \.self) { (item) in
+                Button {
+                    selection = item
+                } label: {
+                    HStack {
+                        Text(item)
+                    }
                 }
             }
+            
+            if selectableItems.isEmpty {
+                getProgressView()
+                    
+            }
         }
+    }
+    
+    fileprivate func getProgressView() -> some View {
+        return ProgressView("Loading..")
+            .progressViewStyle(DefaultProgressViewStyle())
     }
     
     fileprivate func getInputView() -> some View {
@@ -63,6 +75,7 @@ struct PopupInputView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             PopupInputView(placeHolder: "PlaceHolder", selectableItems: ["One", "Two", "Three"], selection: $selection)
+            PopupInputView(placeHolder: "PlaceHolder", selectableItems: [], selection: $selection)
         }
     }
 }
