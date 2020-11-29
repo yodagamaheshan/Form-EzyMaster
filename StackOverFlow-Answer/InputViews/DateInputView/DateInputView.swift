@@ -8,26 +8,33 @@
 import SwiftUI
 
 struct DateInputView: View {
-    let placeHolder: String
-    var value: String?
+    let title: String
+    @Binding var selection: Date
+    @State var isDatePickerShow = false
+    let DatePickerComponents: DatePickerComponents
     
     var body: some View {
         ZStack {
             InputViewBackground()
-            HStack {
-                Text(value == nil ? placeHolder:value!)
-                    .foregroundColor(.yellow)
-                Spacer()
+            
+            DatePicker(selection: $selection, in: Date()..., displayedComponents: DatePickerComponents) {
+                Text(title)
+                    .padding(.leading, 10)
             }
-            .padding(/*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            .accentColor(.yellow)
+            //TODO: Add tap geture
         }
         .frame(height: UIConstants.height, alignment: .center)
-        //TODO: Add tap geture
     }
 }
 
 struct DateInputView_Previews: PreviewProvider {
+    @State static var selectedDate: Date = Date()
     static var previews: some View {
-        DateInputView(placeHolder: "Start Date", value: "2020-12-11")
+        VStack {
+            DateInputView(title: "Start Date", selection: $selectedDate, DatePickerComponents: .date)
+            DateInputView(title: "Start Date", selection: $selectedDate, DatePickerComponents: .hourAndMinute)
+        }
+        
     }
 }

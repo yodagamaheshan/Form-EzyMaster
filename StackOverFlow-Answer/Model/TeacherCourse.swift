@@ -25,9 +25,9 @@ struct TeacherCourse {
     var startDay: Day?
     
     //after shedule type stack
-    var startDate: Date?
-    var startTime: Date?
-    var endTime: Date?
+    var startDate: Date = Date()
+    var startTime: Date = Date()
+    var endTime: Date = Date()
     var languageMadeIn: Language?
     var isTopCourse: Bool = false
     
@@ -109,6 +109,7 @@ extension TeacherCourse{
     
     //after live stack
     private var isValiedBasicSectionAfterSheduleType: Bool {
+        //FIXME
         if startDate == nil || startTime == nil || endTime == nil || languageMadeIn == nil {
             return false
         }

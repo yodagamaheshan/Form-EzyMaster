@@ -83,9 +83,9 @@ extension ContentView {
 
     fileprivate func getViewBelowToIsLiveStack() -> some View {
         return VStack {
-            DateInputView(placeHolder: "Select start date", value: nil)
-            DateInputView(placeHolder: "Select start time", value: nil)
-            DateInputView(placeHolder: "Select end time", value: nil)
+            DateInputView(title: "Select start date", selection: $viewModel.course.startDate, DatePickerComponents: .date)
+            DateInputView(title: "Select start time", selection: $viewModel.course.startTime, DatePickerComponents: .hourAndMinute)
+            DateInputView(title: "Select end time", selection: $viewModel.course.endTime, DatePickerComponents: .hourAndMinute)
             PopupInputView(placeHolder: "Select language made in",selectableItems: viewModel.allLangyageSelectables, selection: $viewModel.languageText)
             CheckButton(isSelected: $viewModel.course.isTopCourse, title: "Check if this course is top course")
         }
