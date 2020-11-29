@@ -46,7 +46,7 @@ struct PopupInputView: View {
         return ZStack {
             InputViewBackground()
             HStack {
-                Text(selection == nil ? placeHolder:selection!)
+                Text(selection == nil ? placeHolder:selection!.capitalized)
                     .foregroundColor(.yellow)
                 Spacer()
                 RoundBackgroundImage(systemName: "chevron.down", forGroundColor: .gray, length: 19, backgroundColor: .yellow)

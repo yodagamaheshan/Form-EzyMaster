@@ -55,16 +55,16 @@ extension ContentView {
             KeyInputTextField(placeHolder: "Course title", text: $viewModel.course.title)
             KeyInputTextField(placeHolder: "Short description", text: $viewModel.course.shortDescription)
             KeyInputTextField(placeHolder: "Description", text: $viewModel.course.description)
-            PopupInputView(placeHolder: "Select sub category",value: viewModel.subCategoryName)
-            PopupInputView(placeHolder: "Select level",value: viewModel.subCategoryName)
+            PopupInputView(placeHolder: "Select sub category", selectableItems: viewModel.allSubCategorySelectables, selection: $viewModel.subCategoryName)
+            PopupInputView(placeHolder: "Select level", selectableItems: viewModel.allLevelSelectables, selection: $viewModel.levelValueText)
             CheckButton(isSelected: $viewModel.isLiveCourse, title: "Check if this course is live")
         }
     }
     
     fileprivate func getIsLiveView() -> some View {
         return VStack {
-            PopupInputView(placeHolder: "Select class room type",value: viewModel.subCategoryName)
-            PopupInputView(placeHolder: "Shedule title",value: nil)
+            PopupInputView(placeHolder: "Select class room type",selectableItems: viewModel.allClassRoomSelectables, selection: $viewModel.classRoomTypeText)
+            KeyInputTextField(placeHolder: "Shedule title", text: $viewModel.course.scheduleTitle)
             GroupTypeToggleButton(viewModel: .init(title: "Shedule type", selection: $viewModel.course.group))
             //per week stack
             if viewModel.isPerWeek {
@@ -73,20 +73,21 @@ extension ContentView {
         }
     }
     
+    fileprivate func getPerWeekView() -> some View {
+        return VStack {
+            PopupInputView(placeHolder: "Select course duration",selectableItems: viewModel.allCourseDurationSelectables, selection: $viewModel.durationText)
+            PopupInputView(placeHolder: "Select day",selectableItems: viewModel.allDaySelectables, selection: $viewModel.dayText)
+            
+        }
+    }
+
     fileprivate func getViewBelowToIsLiveStack() -> some View {
         return VStack {
             DateInputView(placeHolder: "Select start date", value: nil)
             DateInputView(placeHolder: "Select start time", value: nil)
             DateInputView(placeHolder: "Select end time", value: nil)
-            PopupInputView(placeHolder: "Select language made in",value: nil)
+            PopupInputView(placeHolder: "Select language made in",selectableItems: viewModel.allLangyageSelectables, selection: $viewModel.languageText)
             CheckButton(isSelected: $viewModel.course.isTopCourse, title: "Check if this course is top course")
-        }
-    }
-    
-    fileprivate func getPerWeekView() -> some View {
-        return VStack {
-            PopupInputView(placeHolder: "Select course duration",value: viewModel.courseDurationValue)
-            PopupInputView(placeHolder: "Select day", value: viewModel.startDay)
         }
     }
 }
@@ -140,7 +141,7 @@ extension ContentView {
     fileprivate func getMediaSection() -> some View {
         return EzyMasterFormSectionView(title: "Media") {
             VStack {
-                PopupInputView(placeHolder: "Select overView provider", value: viewModel.overViewProviderValue)
+                PopupInputView(placeHolder: "Select overView provider", selectableItems:viewModel.allOverViewProviders, selection: $viewModel.overViewProviderText)
                 KeyInputTextField(placeHolder: "Course overview url", keyBoardType: .URL, text: $viewModel.course.overViewUrl)
                 //TODO: replace with image picker
                 RoundedRectangle(cornerRadius: 15)

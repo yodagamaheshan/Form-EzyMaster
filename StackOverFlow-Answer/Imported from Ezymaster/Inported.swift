@@ -17,10 +17,11 @@ enum CourseType: String, CaseIterable {
     case live
 }
 
-enum ClassRoomType: Int, CaseIterable {
-    case oneToOne = 0
-    case small = 1
-    case lecture = 2
+//TODO: make chanes according to
+enum ClassRoomType: String, CaseIterable {
+    case oneToOne = "One to one"
+    case small = "Small"
+    case lecture = "Lecture hall"
     
     var value: String {
         get {
@@ -32,17 +33,6 @@ enum ClassRoomType: Int, CaseIterable {
             case .lecture:
                 return "Lecture Hall"
             }
-        }
-    }
-    
-    func getTitle() -> String {
-        switch self {
-        case .oneToOne:
-            return "One to one"
-        case .small:
-            return "Small"
-        case .lecture:
-            return "Lecture hall"
         }
     }
 }
@@ -90,6 +80,23 @@ enum Duration: Int, CaseIterable {
             return "Two year"
         case .fourYear:
             return "Four year"
+        }
+    }
+    
+    static func getDuration(by title: String) -> Self{
+        switch title {
+        case "Six months":
+            return .sixMonths
+        case "One year":
+            return .oneYear
+        case "One year and six months":
+            return .oneYearAndSixMonths
+        case "Two year":
+            return .twoYear
+        case "Four year":
+            return .fourYear
+        default:
+            return .sixMonths
         }
     }
 }
