@@ -81,7 +81,7 @@ extension InstructorCourseViewModel {
     }
     var dayText: String? {
         get{ course.startDay?.rawValue.capitalized}
-        set{ course.startDay = Day(rawValue: newValue ?? "")}
+        set{ course.startDay = Day(rawValue: newValue?.lowercased() ?? "")}
     }
     var isPerWeek: Bool {
         course.group == .perWeek
