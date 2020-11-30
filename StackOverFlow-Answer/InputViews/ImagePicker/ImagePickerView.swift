@@ -29,17 +29,21 @@ struct ImagePickerView: View {
                 self.image = Image(uiImage: image)
             }
         }
+        .overlay(
+        RoundedRectangle(cornerRadius: 10)
+            .stroke(style: .init(lineWidth: 2, lineCap: .square, lineJoin: .bevel, miterLimit: 8, dash: [5,10], dashPhase: 7))
+            .padding(15)
+            
+        )
     }
     
     //MARK: method and constant
     fileprivate func getDetailView() -> some View {
         return VStack {
-            Button(action: {}, label: {
                 Image(systemName: "plus.rectangle.fill")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: 28)
-            })
             VStack {
                 Text("Course thumbnail")
                 Text("600 * 600")
