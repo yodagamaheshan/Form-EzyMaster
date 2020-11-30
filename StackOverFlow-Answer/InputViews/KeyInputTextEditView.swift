@@ -13,6 +13,7 @@ struct KeyInputTextEditView: View {
         self.keyBoardType = keyBoardType
         self._text = text
         UITextView.appearance().backgroundColor = .clear
+        //cause text edit backed by UITextView - stackoverflow
     }
     
     let placeHolder: String
@@ -25,28 +26,34 @@ struct KeyInputTextEditView: View {
             InputViewBackground()
             getTextField()
         }
-        
     }
     
     //MARK: constant and method
     fileprivate func getTextField() -> some View {
         return ZStack(alignment: .topLeading) {
-            
-            TextEditor(text: $text)
-                .background(Color.clear)
-                .keyboardType(keyBoardType)
-                .padding([.leading, .trailing], UIConstants.textFieldLeadingAndTralingPadding)
-                .padding([.top, .bottom], 10)
-                .frame(height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            getTextEditView()
             if text.isEmpty {
-                Text(placeHolder)
-                    .foregroundColor(.gray)
-                    .padding([.leading, .trailing], UIConstants.textFieldLeadingAndTralingPadding)
-                        .padding(.top, 1)
-                    .padding()
+                getPlaceholderText()
             } 
         }
         .background(Color.clear)
+    }
+    
+    fileprivate func getTextEditView() -> some View {
+        return TextEditor(text: $text)
+            .background(Color.clear)
+            .keyboardType(keyBoardType)
+            .padding([.leading, .trailing], UIConstants.textFieldLeadingAndTralingPadding)
+            .padding([.top, .bottom], 10)
+            .frame(height: 150, alignment: .center)
+    }
+    
+    fileprivate func getPlaceholderText() -> some View{
+        return Text(placeHolder)
+            .foregroundColor(.gray)
+            .padding([.leading, .trailing], UIConstants.textFieldLeadingAndTralingPadding)
+            .padding(.top, 1)
+            .padding()
     }
 }
 
