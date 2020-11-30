@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Category: Codable, Equatable {
+struct CourseCategory: Codable, Equatable {
     let id, code, name, parent: String?
     let slug, dateAdded: String?
     let lastModified: String?

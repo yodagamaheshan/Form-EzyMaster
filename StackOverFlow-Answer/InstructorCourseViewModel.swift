@@ -12,7 +12,7 @@ class InstructorCourseViewModel:  ObservableObject{
     @Published var course: TeacherCourse = .init()
     
     //get from backend
-    var subCategories: [Category] = []
+    var subCategories: [CourseCategory] = []
 }
 
 //MARK: selectables
@@ -56,7 +56,7 @@ extension InstructorCourseViewModel {
         }
     }
     
-    func getSubCategory(for selectedText: String) -> Category? {
+    func getSubCategory(for selectedText: String) -> CourseCategory? {
         subCategories.first {
             $0.name?.lowercased() == selectedText
         }

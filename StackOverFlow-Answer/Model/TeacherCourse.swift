@@ -13,7 +13,7 @@ struct TeacherCourse {
     var title: String = ""
     var shortDescription: String = ""
     var description: String = ""
-    var subCategory: Category?
+    var subCategory: CourseCategory?
     var level: Level?
     
     var courseType: CourseType = .local
