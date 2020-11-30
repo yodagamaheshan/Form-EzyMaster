@@ -130,6 +130,15 @@
 			path = ImagePicker;
 			sourceTree = "<group>";
 		};
+		FB4397522574E359001ED412 /* Instructor course */ = {
+			isa = PBXGroup;
+			children = (
+				FB4681902564B71400048A9D /* ContentView.swift */,
+				FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */,
+			);
+			path = "Instructor course";
+			sourceTree = "<group>";
+		};
 		FB4681782564AA7400048A9D /* Imported from Ezymaster */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,8 +234,7 @@
 				FB4681782564AA7400048A9D /* Imported from Ezymaster */,
 				FBC8483025637E0B00202D6E /* InputViews */,
 				FBDBFE1A253EB96A0051B0E0 /* StackOverFlow_AnswerApp.swift */,
-				FB4681902564B71400048A9D /* ContentView.swift */,
-				FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */,
+				FB4397522574E359001ED412 /* Instructor course */,
 				FBC8481925635E7100202D6E /* DoubleToggleButton */,
 				FB7DC13125628C9200962A54 /* CheckButton.swift */,
 				FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */,

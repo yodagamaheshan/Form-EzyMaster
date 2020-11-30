@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  InstructorCourseView.swift
 //  StackOverFlow-Answer
 //
 //  Created by Heshan Yodagama on 10/20/20.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct ContentView: View {
+struct InstructorCourseView: View {
     @ObservedObject private var viewModel = InstructorCourseViewModel()
     
     var body: some View {
@@ -36,7 +36,7 @@ struct ContentView: View {
 
 //MARK: Basic section View
 //TODO: refactor if possible
-extension ContentView {
+extension InstructorCourseView {
     fileprivate func getBasicSection() -> some View {
         return EzyMasterFormSectionView(title: "Basic") {
             VStack {
@@ -93,7 +93,7 @@ extension ContentView {
 }
 
 //MARK: Requirements
-extension ContentView {
+extension InstructorCourseView {
     fileprivate func getRequirementSection() -> some View {
         return EzyMasterFormSectionView(title: "Requirements") {
             KeyInputTextField(placeHolder: "ex: requirenment 1,requirenment 2", text: $viewModel.requirements)
@@ -102,7 +102,7 @@ extension ContentView {
 }
 
 //MARK: Outcomes
-extension ContentView {
+extension InstructorCourseView {
     fileprivate func getOutComesSection() -> EzyMasterFormSectionView<KeyInputTextField> {
         return EzyMasterFormSectionView(title: "Outcomes") {
             KeyInputTextField(placeHolder: "ex: outcome 1, outcome 2", text: $viewModel.outcomes)
@@ -111,7 +111,7 @@ extension ContentView {
 }
 
 //MARK: Pricing
-extension ContentView {
+extension InstructorCourseView {
     fileprivate func getPricingSection() -> some View {
         return EzyMasterFormSectionView(title: "Pricing") {
             VStack {
@@ -137,7 +137,7 @@ extension ContentView {
 }
 
 //MARK: Media
-extension ContentView {
+extension InstructorCourseView {
     fileprivate func getMediaSection() -> some View {
         return EzyMasterFormSectionView(title: "Media") {
             VStack {
@@ -150,7 +150,7 @@ extension ContentView {
 }
 
 //MARK: SEO
-extension ContentView{
+extension InstructorCourseView{
     fileprivate func getSEOSection() -> some View {
         return EzyMasterFormSectionView(title: "SEO") {
             VStack {
@@ -160,9 +160,9 @@ extension ContentView{
         }
     }
 }
-struct ContentView_Previews: PreviewProvider {
+struct InstructorCourseView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        InstructorCourseView()
     }
 }
 
