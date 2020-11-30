@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB023611256D52D0002E2543 /* TeacherCourseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB023610256D52D0002E2543 /* TeacherCourseTests.swift */; };
+		FB43973A25748905001ED412 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43973925748905001ED412 /* ImagePicker.swift */; };
 		FB46817E2564AD5D00048A9D /* TeacherCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46817D2564AD5D00048A9D /* TeacherCourse.swift */; };
 		FB4681862564B2EF00048A9D /* Inported.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4681852564B2EF00048A9D /* Inported.swift */; };
 		FB4681912564B71400048A9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4681902564B71400048A9D /* ContentView.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		FB023610256D52D0002E2543 /* TeacherCourseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherCourseTests.swift; sourceTree = "<group>"; };
+		FB43973925748905001ED412 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		FB46817D2564AD5D00048A9D /* TeacherCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherCourse.swift; sourceTree = "<group>"; };
 		FB4681852564B2EF00048A9D /* Inported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inported.swift; sourceTree = "<group>"; };
 		FB4681902564B71400048A9D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				FBDBFE20253EB96A0051B0E0 /* Preview Content */,
 				FBC84843256388B600202D6E /* UIConstants.swift */,
 				FBAF43EA2563D6CD00D42C99 /* EzyMasterFormSectionView.swift */,
+				FB43973925748905001ED412 /* ImagePicker.swift */,
 			);
 			path = "StackOverFlow-Answer";
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				FBC848612563AB4500202D6E /* DateInputView.swift in Sources */,
 				FB4681862564B2EF00048A9D /* Inported.swift in Sources */,
 				FB9979552573C47900A4EC5C /* KeyInputTextEditView.swift in Sources */,
+				FB43973A25748905001ED412 /* ImagePicker.swift in Sources */,
 				FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */,
 				FBC8483F2563820600202D6E /* SectionBackground.swift in Sources */,
 				FBC8483A25637E4600202D6E /* KeyInputTextField.swift in Sources */,
