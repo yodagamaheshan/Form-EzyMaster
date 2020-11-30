@@ -54,7 +54,7 @@ extension ContentView {
         return VStack {
             KeyInputTextField(placeHolder: "Course title", text: $viewModel.course.title)
             KeyInputTextField(placeHolder: "Short description", text: $viewModel.course.shortDescription)
-            KeyInputTextField(placeHolder: "Description", text: $viewModel.course.description)
+            KeyInputTextEditView(placeHolder: "Description", text: $viewModel.course.description)
             PopupInputView(placeHolder: "Select sub category", selectableItems: viewModel.allSubCategorySelectables, selection: $viewModel.subCategoryName)
             PopupInputView(placeHolder: "Select level", selectableItems: viewModel.allLevelSelectables, selection: $viewModel.levelValueText)
             CheckButton(isSelected: $viewModel.isLiveCourse, title: "Check if this course is live")
@@ -157,11 +157,8 @@ extension ContentView{
     fileprivate func getSEOSection() -> some View {
         return EzyMasterFormSectionView(title: "SEO") {
             VStack {
-                KeyInputTextField(placeHolder: "Meta description", text: $viewModel.course.metaDescription)
-                //TODO: replace with Text...
-                RoundedRectangle(cornerRadius: 15)
-                    .fill(Color.gray)
-                    .frame(height: 200)
+                KeyInputTextField(placeHolder: "Meta keywords", text: $viewModel.course.metaKeywords)
+                KeyInputTextEditView(placeHolder: "Meta description", text: $viewModel.course.metaDescription)
             }
         }
     }

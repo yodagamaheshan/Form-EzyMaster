@@ -15,6 +15,7 @@
 		FB7DC1282562864900962A54 /* InstructorCourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */; };
 		FB7DC12D256288E900962A54 /* EzyMasterAppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */; };
 		FB7DC13225628C9200962A54 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7DC13125628C9200962A54 /* CheckButton.swift */; };
+		FB9979552573C47900A4EC5C /* KeyInputTextEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9979542573C47900A4EC5C /* KeyInputTextEditView.swift */; };
 		FB9C4C7F2541169400CAC446 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = FB9C4C7E2541169400CAC446 /* MyLibrary */; };
 		FBAF43EB2563D6CD00D42C99 /* EzyMasterFormSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF43EA2563D6CD00D42C99 /* EzyMasterFormSectionView.swift */; };
 		FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */; };
@@ -62,6 +63,7 @@
 		FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructorCourseViewModel.swift; sourceTree = "<group>"; };
 		FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzyMasterAppButton.swift; sourceTree = "<group>"; };
 		FB7DC13125628C9200962A54 /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
+		FB9979542573C47900A4EC5C /* KeyInputTextEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyInputTextEditView.swift; sourceTree = "<group>"; };
 		FB9C4C792541166B00CAC446 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLibrary; path = ../../HeshSwiftPackages/MyLibrary; sourceTree = "<group>"; };
 		FBAF43EA2563D6CD00D42C99 /* EzyMasterFormSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzyMasterFormSectionView.swift; sourceTree = "<group>"; };
 		FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivenSwiftUIView.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				FBC8485F2563AB2D00202D6E /* DateInputView */,
 				FBC8483125637E1F00202D6E /* InputViewBackground.swift */,
 				FBC8483925637E4600202D6E /* KeyInputTextField.swift */,
+				FB9979542573C47900A4EC5C /* KeyInputTextEditView.swift */,
 				FBC8483E2563820600202D6E /* SectionBackground.swift */,
 				FBC848582563A2C900202D6E /* PopUpInputView */,
 			);
@@ -394,6 +397,7 @@
 				FBC8482825635F2300202D6E /* GroupTypeToggleButtonViewModel.swift in Sources */,
 				FBC848612563AB4500202D6E /* DateInputView.swift in Sources */,
 				FB4681862564B2EF00048A9D /* Inported.swift in Sources */,
+				FB9979552573C47900A4EC5C /* KeyInputTextEditView.swift in Sources */,
 				FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */,
 				FBC8483F2563820600202D6E /* SectionBackground.swift in Sources */,
 				FBC8483A25637E4600202D6E /* KeyInputTextField.swift in Sources */,
