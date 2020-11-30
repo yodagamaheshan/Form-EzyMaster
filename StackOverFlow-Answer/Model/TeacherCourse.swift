@@ -20,7 +20,7 @@ struct TeacherCourse {
     var classRoomType: ClassRoomType?
     var scheduleTitle: String = ""
     
-    var group: Group = .once
+    var group: CourseGroup = .once
     var courseDuration: Duration?
     var startDay: Day?
     

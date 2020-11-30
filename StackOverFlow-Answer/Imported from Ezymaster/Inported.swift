@@ -37,7 +37,7 @@ enum ClassRoomType: String, CaseIterable {
     }
 }
 
-enum Group: String, CaseIterable {
+enum CourseGroup: String, CaseIterable {
     case once
     case perWeek = "per_week"
     

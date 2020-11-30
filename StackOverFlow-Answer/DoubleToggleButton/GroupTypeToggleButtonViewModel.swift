@@ -8,13 +8,13 @@
 import SwiftUI
 
 class GroupTypeToggleButtonViewModel: ObservableObject {
-    internal init(title: String, selection: Binding<Group>) {
+    internal init(title: String, selection: Binding<CourseGroup>) {
         self.title = title
         self._selection = selection
     }
     
     //output
-    @Binding var selection: Group
+    @Binding var selection: CourseGroup
     
     func selectLeft() {
         selection = leftValue
@@ -32,8 +32,8 @@ class GroupTypeToggleButtonViewModel: ObservableObject {
     }
     var title: String
     
-    private var leftValue = Group.once
-    private var rightValue = Group.perWeek
+    private var leftValue = CourseGroup.once
+    private var rightValue = CourseGroup.perWeek
     
     var leftTitle: String {
         leftValue.getTitle()

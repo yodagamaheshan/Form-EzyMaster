@@ -143,10 +143,7 @@ extension ContentView {
             VStack {
                 PopupInputView(placeHolder: "Select overView provider", selectableItems:viewModel.allOverViewProviders, selection: $viewModel.overViewProviderText)
                 KeyInputTextField(placeHolder: "Course overview url", keyBoardType: .URL, text: $viewModel.course.overViewUrl)
-                //TODO: replace with image picker
-                RoundedRectangle(cornerRadius: 15)
-                    .fill(Color.gray)
-                    .frame(height: 200)
+                ImagePickerView(image: $viewModel.course.thumbnail)
             }
         }
     }
@@ -168,4 +165,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
 
