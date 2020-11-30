@@ -13,21 +13,25 @@ struct InstructorCourseView: View {
     
     var body: some View {
         
-        ScrollView {
-            VStack {
-                getBasicSection()
-                getRequirementSection()
-                getOutComesSection()
-                getPricingSection()
-                getMediaSection()
-                getSEOSection()
-                
-                EzyMasterAppButton(action: viewModel.submit, title: "Submit", isValied: viewModel.course.isValiedCourse)
+        VStack(spacing: 0) {
+            SwiftUINavigationView()
+            
+            ScrollView {
+                VStack {
+                    getBasicSection()
+                    getRequirementSection()
+                    getOutComesSection()
+                    getPricingSection()
+                    getMediaSection()
+                    getSEOSection()
+                    
+                    EzyMasterAppButton(action: viewModel.submit, title: "Submit", isValied: viewModel.course.isValiedCourse)
+                }
+                .padding(scrollViewContentPadding)
+                .animation(.spring())
             }
-            .padding(scrollViewContentPadding)
-            .animation(.spring())
+            .background(Color.pink.opacity(0.2))
         }
-        .background(Color.pink.opacity(0.2))
     }
     
     //MARK: constant and methods
@@ -80,7 +84,7 @@ extension InstructorCourseView {
             
         }
     }
-
+    
     fileprivate func getViewBelowToIsLiveStack() -> some View {
         return VStack {
             DateInputView(title: "Select start date", selection: $viewModel.course.startDate, datePickerComponents: .date)
@@ -165,6 +169,7 @@ struct InstructorCourseView_Previews: PreviewProvider {
         InstructorCourseView()
     }
 }
+
 
 
 

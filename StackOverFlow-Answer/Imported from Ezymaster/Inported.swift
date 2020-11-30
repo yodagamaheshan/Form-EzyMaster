@@ -17,7 +17,6 @@ enum CourseType: String, CaseIterable {
     case live
 }
 
-//TODO: make chanes according to
 enum ClassRoomType: String, CaseIterable {
     case oneToOne = "One to one"
     case small = "Small"

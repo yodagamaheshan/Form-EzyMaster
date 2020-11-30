@@ -10,6 +10,7 @@
 		FB023611256D52D0002E2543 /* TeacherCourseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB023610256D52D0002E2543 /* TeacherCourseTests.swift */; };
 		FB43973A25748905001ED412 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43973925748905001ED412 /* ImagePicker.swift */; };
 		FB43974025749BBE001ED412 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB43973F25749BBE001ED412 /* ImagePickerView.swift */; };
+		FB4397912574FAB0001ED412 /* SwiftUINavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4397902574FAB0001ED412 /* SwiftUINavigationView.swift */; };
 		FB46817E2564AD5D00048A9D /* TeacherCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB46817D2564AD5D00048A9D /* TeacherCourse.swift */; };
 		FB4681862564B2EF00048A9D /* Inported.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4681852564B2EF00048A9D /* Inported.swift */; };
 		FB4681912564B71400048A9D /* InstructorCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4681902564B71400048A9D /* InstructorCourseView.swift */; };
@@ -20,7 +21,6 @@
 		FB9979552573C47900A4EC5C /* KeyInputTextEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9979542573C47900A4EC5C /* KeyInputTextEditView.swift */; };
 		FB9C4C7F2541169400CAC446 /* MyLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = FB9C4C7E2541169400CAC446 /* MyLibrary */; };
 		FBAF43EB2563D6CD00D42C99 /* EzyMasterFormSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAF43EA2563D6CD00D42C99 /* EzyMasterFormSectionView.swift */; };
-		FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */; };
 		FBC8481225635DCF00202D6E /* ToggleButtonLabl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8481125635DCF00202D6E /* ToggleButtonLabl.swift */; };
 		FBC8481B25635E8D00202D6E /* SelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8481A25635E8D00202D6E /* SelectionButton.swift */; };
 		FBC8482325635EE800202D6E /* GroupTypeToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC8482225635EE800202D6E /* GroupTypeToggleButton.swift */; };
@@ -60,6 +60,7 @@
 		FB023610256D52D0002E2543 /* TeacherCourseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherCourseTests.swift; sourceTree = "<group>"; };
 		FB43973925748905001ED412 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		FB43973F25749BBE001ED412 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		FB4397902574FAB0001ED412 /* SwiftUINavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUINavigationView.swift; sourceTree = "<group>"; };
 		FB46817D2564AD5D00048A9D /* TeacherCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherCourse.swift; sourceTree = "<group>"; };
 		FB4681852564B2EF00048A9D /* Inported.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inported.swift; sourceTree = "<group>"; };
 		FB4681902564B71400048A9D /* InstructorCourseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructorCourseView.swift; sourceTree = "<group>"; };
@@ -70,7 +71,6 @@
 		FB9979542573C47900A4EC5C /* KeyInputTextEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyInputTextEditView.swift; sourceTree = "<group>"; };
 		FB9C4C792541166B00CAC446 /* MyLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MyLibrary; path = ../../HeshSwiftPackages/MyLibrary; sourceTree = "<group>"; };
 		FBAF43EA2563D6CD00D42C99 /* EzyMasterFormSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EzyMasterFormSectionView.swift; sourceTree = "<group>"; };
-		FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivenSwiftUIView.swift; sourceTree = "<group>"; };
 		FBC8481125635DCF00202D6E /* ToggleButtonLabl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleButtonLabl.swift; sourceTree = "<group>"; };
 		FBC8481A25635E8D00202D6E /* SelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionButton.swift; sourceTree = "<group>"; };
 		FBC8482225635EE800202D6E /* GroupTypeToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTypeToggleButton.swift; sourceTree = "<group>"; };
@@ -137,6 +137,14 @@
 				FB7DC1272562864900962A54 /* InstructorCourseViewModel.swift */,
 			);
 			path = "Instructor course";
+			sourceTree = "<group>";
+		};
+		FB43978F2574FA9D001ED412 /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				FB4397902574FAB0001ED412 /* SwiftUINavigationView.swift */,
+			);
+			path = NavigationView;
 			sourceTree = "<group>";
 		};
 		FB4681782564AA7400048A9D /* Imported from Ezymaster */ = {
@@ -230,6 +238,7 @@
 		FBDBFE19253EB96A0051B0E0 /* StackOverFlow-Answer */ = {
 			isa = PBXGroup;
 			children = (
+				FB43978F2574FA9D001ED412 /* NavigationView */,
 				FB46817C2564AD4C00048A9D /* Model */,
 				FB4681782564AA7400048A9D /* Imported from Ezymaster */,
 				FBC8483025637E0B00202D6E /* InputViews */,
@@ -238,7 +247,6 @@
 				FBC8481925635E7100202D6E /* DoubleToggleButton */,
 				FB7DC13125628C9200962A54 /* CheckButton.swift */,
 				FB7DC12C256288E900962A54 /* EzyMasterAppButton.swift */,
-				FBC6CBA6255A9B1700C5DE30 /* GivenSwiftUIView.swift */,
 				FBDBFE1E253EB96A0051B0E0 /* Assets.xcassets */,
 				FBDBFE23253EB96A0051B0E0 /* Info.plist */,
 				FBDBFE20253EB96A0051B0E0 /* Preview Content */,
@@ -411,6 +419,7 @@
 				FB7DC12D256288E900962A54 /* EzyMasterAppButton.swift in Sources */,
 				FBC8481225635DCF00202D6E /* ToggleButtonLabl.swift in Sources */,
 				FBC8481B25635E8D00202D6E /* SelectionButton.swift in Sources */,
+				FB4397912574FAB0001ED412 /* SwiftUINavigationView.swift in Sources */,
 				FB43974025749BBE001ED412 /* ImagePickerView.swift in Sources */,
 				FBC84844256388B600202D6E /* UIConstants.swift in Sources */,
 				FB7DC13225628C9200962A54 /* CheckButton.swift in Sources */,
@@ -422,7 +431,6 @@
 				FB4681862564B2EF00048A9D /* Inported.swift in Sources */,
 				FB9979552573C47900A4EC5C /* KeyInputTextEditView.swift in Sources */,
 				FB43973A25748905001ED412 /* ImagePicker.swift in Sources */,
-				FBC6CBA7255A9B1700C5DE30 /* GivenSwiftUIView.swift in Sources */,
 				FBC8483F2563820600202D6E /* SectionBackground.swift in Sources */,
 				FBC8483A25637E4600202D6E /* KeyInputTextField.swift in Sources */,
 				FBC8484925638B6D00202D6E /* PopupInputView.swift in Sources */,
