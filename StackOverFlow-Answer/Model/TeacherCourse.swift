@@ -155,8 +155,7 @@ extension TeacherCourse {
 //MARK: media
 extension TeacherCourse {
     private var isValiedMediaSection: Bool {
-        //FIXME: add -> || thumbnail == nil
-        if courseOverViewProvider == nil || overViewUrl.isEmpty {
+        if courseOverViewProvider == nil || overViewUrl.isEmpty || thumbnail == nil {
             return false
         }
         return true
@@ -166,8 +165,7 @@ extension TeacherCourse {
 //MARK: SEO
 extension TeacherCourse {
     private var isValiedSEO: Bool {
-        //FIXME: add -> || metaDescription.isEmpty 
-        if metaKeywords.isEmpty {
+        if metaKeywords.isEmpty || metaDescription.isEmpty  {
             return false
         }
         return true
